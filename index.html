@@ -11,27 +11,36 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="controller.css">
     <link rel="stylesheet" href="polygonShape.css">
+    <link rel="stylesheet" href="marquee_effect.css">
+    <link rel="stylesheet" href="phoneBackground.css">
+    <link rel="stylesheet" href="popAnimdation.css">
 </head>
 <body class="justify-center items-center flex flex-col bg-black smooth-scroll overflow-x-hidden">
+
+    <!-- Introduction -->
     <div class="relative w-screen bg-black flex flex-col items-center justify-center">
         <img class="absolute object-cover" src="./assets/controllerBg.png" alt="">
         <div class="relative flex justify-center items-center bg-black">
             <div class="mb-100 absolute w-[800px] h-[800px] bg-[radial-gradient(circle,rgba(174,86,255,0.9),rgba(138,43,226,0.4),transparent)] rounded-full blur-[140px] opacity-80 z-0"></div>
-            <h1 class="tracking-tighter relative z-10 translate-y-10 text-white text-8xl font-bold text-center max-w-[50rem]">
+            <h1 id="title" class="tracking-tighter relative z-10 translate-y-10 text-white text-8xl font-bold text-center max-w-[50rem]">
                 The Ultimate Gaming Social Network
             </h1>
         </div>        
-        <div>
-            <img class="animate-[float_3s_ease-in-out_infinite] max-w-[50rem] w-full -rotate-[5.5deg] animate-spring3 will-change-transform" src="./assets/controller.webp">
+        <div class="relative animate-[float_3s_ease-in-out_infinite]">
+
+            <!-- you may remove the image here and put yours into it -->
+            <img class=" max-w-[50rem] w-full -rotate-[5.5deg] animate-spring3 change" src="./assets/controller.webp">
+
+            <!-- this is the design you see in four corners in the controller jsut leave it as it is -->
+            <svg width="1077" height="536" viewBox="0 0 1077 536" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 -left-[4.5rem] w-[112%] -z-[1]  h-full animate-spring4" style="opacity: 1;"><g clip-path="url(#clip0_1060_4225)"><g clip-path="url(#clip1_1060_4225)"><path d="M345.745 323.928L166.138 123.51L-112.626 149.795" stroke="white" stroke-dasharray="1 4"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M168.146 120.044L196.968 152.205L197.569 158.583L197.499 158.59L166.068 123.517L164.851 123.632L168.146 120.044ZM163.443 123.764L85.8582 131.08L89.502 127.114L167.086 119.798L163.443 123.764Z" fill="url(#paint0_radial_1060_4225)"></path></g><path opacity="0.5" d="M87.9426 127.261L70.7314 113.016L56.4863 130.227L73.6974 144.472L87.9426 127.261Z" stroke="white" stroke-width="1.7"></path><path d="M68.4975 129.094L71.5633 125.39L75.2675 128.456L72.2017 132.16L68.4975 129.094Z" fill="#00FEFD"></path></g><g clip-path="url(#clip2_1060_4225)"><g clip-path="url(#clip3_1060_4225)"><path d="M746.966 286.096L885.945 55.6383L1164.71 29.3533" stroke="white" stroke-dasharray="1 4"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M883.324 52.609L861.022 89.5902L861.624 95.9686L861.694 95.962L886.015 55.6319L887.232 55.5171L883.324 52.609ZM888.64 55.3843L966.225 48.0688L961.904 44.8536L884.319 52.1692L888.64 55.3843Z" fill="url(#paint1_radial_1060_4225)"></path></g><path opacity="0.5" d="M963.464 44.7066L977.709 27.4954L994.92 41.7405L980.675 58.9517L963.464 44.7066Z" stroke="white" stroke-width="1.7"></path><path d="M982.909 42.8727L979.204 39.8069L976.139 43.511L979.843 46.5768L982.909 42.8727Z" fill="#00FEFD"></path></g><g clip-path="url(#clip4_1060_4225)"><g clip-path="url(#clip5_1060_4225)"><path d="M776.762 207.954L956.369 408.372L1235.13 382.087" stroke="white" stroke-dasharray="1 4"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M954.361 411.838L925.539 379.677L924.938 373.299L925.008 373.292L956.439 408.365L957.656 408.251L954.361 411.838ZM959.064 408.118L1036.65 400.802L1033 404.768L955.421 412.084L959.064 408.118Z" fill="url(#paint2_radial_1060_4225)"></path></g><path opacity="0.5" d="M1034.56 404.621L1051.78 418.866L1066.02 401.655L1048.81 387.41L1034.56 404.621Z" stroke="white" stroke-width="1.7"></path><path d="M1054.01 402.788L1050.94 406.492L1047.24 403.427L1050.31 399.722L1054.01 402.788Z" fill="#00FEFD"></path></g><g clip-path="url(#clip6_1060_4225)"><g clip-path="url(#clip7_1060_4225)"><path d="M292.908 253.578L153.929 484.035L-124.835 510.321" stroke="white" stroke-dasharray="1 4"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M156.55 487.065L178.851 450.084L178.25 443.705L178.18 443.712L153.858 484.042L152.641 484.157L156.55 487.065ZM151.233 484.29L73.6489 491.605L77.9698 494.82L155.554 487.505L151.233 484.29Z" fill="url(#paint3_radial_1060_4225)"></path></g><path opacity="0.5" d="M76.4104 494.967L62.1652 512.178L44.954 497.933L59.1992 480.722L76.4104 494.967Z" stroke="white" stroke-width="1.7"></path><path d="M56.9654 496.801L60.6695 499.867L63.7353 496.163L60.0312 493.097L56.9654 496.801Z" fill="#00FEFD"></path></g><defs><radialGradient id="paint0_radial_1060_4225" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(167.462 121.574) rotate(119.485) scale(62.0919 119.883)"><stop stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></radialGradient><radialGradient id="paint1_radial_1060_4225" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(884.282 53.9839) rotate(49.7422) scale(62.0919 119.883)"><stop stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></radialGradient><radialGradient id="paint2_radial_1060_4225" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(955.045 410.308) rotate(-60.5154) scale(62.0919 119.883)"><stop stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></radialGradient><radialGradient id="paint3_radial_1060_4225" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(155.591 485.69) rotate(-130.258) scale(62.0919 119.883)"><stop stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></radialGradient><clipPath id="clip0_1060_4225"><rect width="147" height="139" fill="white" transform="matrix(-0.995584 0.0938752 0.0938752 0.995584 192.193 80.2668)"></rect></clipPath><clipPath id="clip1_1060_4225"><rect width="244" height="220" fill="white" transform="matrix(-0.995584 0.0938752 0.0938752 0.995584 325.093 104.9)"></rect></clipPath><clipPath id="clip2_1060_4225"><rect width="147" height="139" fill="white" transform="translate(852.266 18.0275) rotate(-5.38659)"></rect></clipPath><clipPath id="clip3_1060_4225"><rect width="244" height="220" fill="white" transform="translate(726.313 67.0679) rotate(-5.38659)"></rect></clipPath><clipPath id="clip4_1060_4225"><rect width="147" height="139" fill="white" transform="matrix(0.995584 -0.0938752 -0.0938752 -0.995584 930.314 451.615)"></rect></clipPath><clipPath id="clip5_1060_4225"><rect width="244" height="220" fill="white" transform="matrix(0.995584 -0.0938752 -0.0938752 -0.995584 797.414 426.983)"></rect></clipPath><clipPath id="clip6_1060_4225"><rect width="147" height="139" fill="white" transform="translate(187.608 521.646) rotate(174.613)"></rect></clipPath><clipPath id="clip7_1060_4225"><rect width="244" height="220" fill="white" transform="translate(313.561 472.606) rotate(174.613)"></rect></clipPath></defs></svg>
         </div>
-        <img class="absolute right-0 bottom-0 md:mr-30 md:mb-30 h-24 rounded-full" src="./assets//default logo.jpg" alt="">
+        <img class="absolute right-0 bottom-0 md:mr-30 md:mb-30 h-24 rounded-full" src="./assets/default logo.jpg" alt="">
         <p class="absolute text-white bottom-0 mb-10 max-w-[13rem] text-sm ml-50">Discover a community-driven platform
             that brings gamers together to compete,
             collaborate, and stay ahead in the gaming
             universe.
         </p>
     </div>
-    
 
     <!-- Carousel for community like posting or reviews you can put it in here -->
     <div class="bg-white w-screen flex flex-col items-center justify-center h-fit">
@@ -39,15 +48,16 @@
         <div id="polygonBox" class="bg-white"
             style="clip-path: polygon(74.3% 0%, 80.4% 60.5%, 20.9% 60.5%, 28.4% 0%); inset: 0px auto auto 0px; margin: 0px; width: 777px; height: 689px; max-width: 777px; max-height: 689px; padding: 0px; transform: translate(0px, 0px);"
         >
-            <img src="./assets/global.webp" alt="">
+         <!--this is the background image in the review  -->
+        <img src="./assets/global.webp" alt="">
         </div>
     </div>
 
     <!-- Introducing put your web name -->
-    <div class="flex flex-col md:flex-row relative w-screen bg-black text-white items-center justify-center gap-30 md:gap-50">
+    <div class="flex flex-col md:flex-row relative w-screen bg-black text-white items-center justify-center gap-30 md:gap-50 mb-50">
         <img class="absolute" src="./assets/stream-bg.png" alt="">
         <div class="flex flex-col space-y-5">
-            <p class="text-orange-500">Introducing</p>
+            <p class="text-orange-500 change">Introducing</p>
             <h1 class="text-7xl font-bold ">Synctec</h1>
             <p class="max-w-96 font-sans">Synctec is your gateway to a thriving and dynamic network of
                 gamers, creators, and innovators. Our platform brings together
@@ -57,15 +67,551 @@
             </p>
 
             <button class="relative flex items-center justify-center text-25 font-bebas uppercase h-44 text-btn-color" >
-                <span class="relative z-10">Join Us</span>
+                <span class="relative z-10 change">Join Us</span>
                 <svg width="444" height="86" viewBox="0 0 444 86" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 h-full w-full black pointer-events-none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5965 20.8128L20.7876 28.9788L39.0006 10.6612L21.8953 0L28.0468 9.24172L16.5965 20.8128ZM4.34087 40.3589L8.66874 58.0371L0 49.1995L4.34087 40.3589ZM59.8256 67.9985L55.5038 76.3395L34.0195 75.5182L43.4683 50.8612L38.5674 48.172L26.6938 57.7254L26.8657 53.2287L65.8854 14.1907L74.8788 14.5345L55.4373 38.8096L50.0178 36.601L51.3448 41.155L49.6167 47.0933L59.8256 67.9985ZM60.8821 66.5378L51.6152 47.1697L77.3579 15.1296L95.8444 15.8363L60.8821 66.5378ZM22.3468 40.5468L27.4608 50.7496L63.4636 12.0967L49.4738 11.5619L33.9882 23.9794L22.3468 40.5468ZM77.0449 75.558V79.736L86.3338 77.5067L110.545 26.236L89.4136 76.7676L89.5449 76.736L91.5449 81.236L94.5656 74.8591L148.763 72.6974L155.045 59.236L151.545 73.736L151.383 73.7591L165.045 79.736V72.736L173.045 85.736L187.634 71.147L190.888 71.0172L200.545 74.236L201.272 70.6031L221.601 69.7922L227.045 75.236L228.764 69.5065L293.675 66.9174L288.079 61.824L296.42 66.808L411.045 62.236L435.045 39.736L429.699 33.0533L417.045 40.736L429.045 32.236L443.545 15.236L442.545 8.23603L161.437 13.1677L161.545 12.736L169.045 4.23603L104.545 6.23603L96.0449 20.736H96.299L60.0449 76.236L77.0449 75.558ZM144.545 33.236L153.045 25.236L147.545 36.236L144.545 33.236ZM193.545 44.236C193.545 45.8929 192.649 47.236 191.545 47.236C190.44 47.236 189.545 45.8929 189.545 44.236C189.545 42.5792 190.44 41.236 191.545 41.236C192.649 41.236 193.545 42.5792 193.545 44.236ZM132.045 40.236V36.736L126.045 33.236L132.045 40.236Z" fill="#16171B"></path></svg>
             </button>
         </div>
         <div class="relative">
-            <div class="mb-100 absolute w-[800px] h-[800px] bg-[radial-gradient(circle,rgba(174,86,255,0.9),rgba(138,43,226,0.4),transparent)] rounded-full blur-[140px] opacity-80 z-0"></div>
-            <img class="translate-y-20 animate-[float2_3s_ease-in-out_infinite] h-[50rem] " src="./assets/astra_artwork.webp" alt="">
+            <div class="mb-100 ml-30 absolute w-[200px] h-[800px] bg-[radial-gradient(circle,rgba(174,86,255,0.9),rgba(138,43,226,0.4),transparent)] rounded-full blur-[140px] opacity-80 z-0"></div>
+            <!-- astra image on the right side-->
+            <img class="change translate-y-20 animate-[float2_3s_ease-in-out_infinite] h-[40rem] " src="./assets/astra_artwork.webp" alt="">
         </div>
     </div>
+
+    <!-- Gamers Assemble -->
+    <div class="flex flex-col w-full">
+        <div class="relative">
+            <img class="absolute z-50" src="./assets/stream-bg.png" alt="">
+            <div class="text-white text-center justify-center justify-center flex flex-col gap-2">
+                <div class="flex flex-col items-center justify-center">
+                    <div class=" text-7xl font-bold">
+                        <div style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">Gamers</div> 
+                        <span class="text-orange" style="display: inline-block; position: relative;">
+                            <div class="text-orange-500" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">Assemble!</div>
+                        </span>
+                    </div>
+                    <p class="text-center w-[50rem] flex">Our platform is designed to bring together gamers, creators, and innovators, providing a dynamic and
+                        engaging environment where everyone can thrive. From streaming and wagering to community building and
+                        secure transactions, Synctec is your ultimate destination for all things gaming.
+                    </p>
+                </div>
+
+
+                <button class="relative flex items-center justify-center text-25 font-bebas uppercase h-24 text-btn-color" >
+                        <span class="relative z-10">Join Us</span>
+                        <svg viewBox="0 0 444 86" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 h-full w-full black pointer-events-none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5965 20.8128L20.7876 28.9788L39.0006 10.6612L21.8953 0L28.0468 9.24172L16.5965 20.8128ZM4.34087 40.3589L8.66874 58.0371L0 49.1995L4.34087 40.3589ZM59.8256 67.9985L55.5038 76.3395L34.0195 75.5182L43.4683 50.8612L38.5674 48.172L26.6938 57.7254L26.8657 53.2287L65.8854 14.1907L74.8788 14.5345L55.4373 38.8096L50.0178 36.601L51.3448 41.155L49.6167 47.0933L59.8256 67.9985ZM60.8821 66.5378L51.6152 47.1697L77.3579 15.1296L95.8444 15.8363L60.8821 66.5378ZM22.3468 40.5468L27.4608 50.7496L63.4636 12.0967L49.4738 11.5619L33.9882 23.9794L22.3468 40.5468ZM77.0449 75.558V79.736L86.3338 77.5067L110.545 26.236L89.4136 76.7676L89.5449 76.736L91.5449 81.236L94.5656 74.8591L148.763 72.6974L155.045 59.236L151.545 73.736L151.383 73.7591L165.045 79.736V72.736L173.045 85.736L187.634 71.147L190.888 71.0172L200.545 74.236L201.272 70.6031L221.601 69.7922L227.045 75.236L228.764 69.5065L293.675 66.9174L288.079 61.824L296.42 66.808L411.045 62.236L435.045 39.736L429.699 33.0533L417.045 40.736L429.045 32.236L443.545 15.236L442.545 8.23603L161.437 13.1677L161.545 12.736L169.045 4.23603L104.545 6.23603L96.0449 20.736H96.299L60.0449 76.236L77.0449 75.558ZM144.545 33.236L153.045 25.236L147.545 36.236L144.545 33.236ZM193.545 44.236C193.545 45.8929 192.649 47.236 191.545 47.236C190.44 47.236 189.545 45.8929 189.545 44.236C189.545 42.5792 190.44 41.236 191.545 41.236C192.649 41.236 193.545 42.5792 193.545 44.236ZM132.045 40.236V36.736L126.045 33.236L132.045 40.236Z" fill="#16171B"></path></svg>
+                </button>
+
+                <div class="max-w-[100rem] w-full justify-center flex flex-col items-center">
+                    <!-- put your own iamge here -->
+                    <img alt="group of fortnite characters" class="max-w-[80rem] h-full object-cover"
+                    src="./assets/assemble-img.png">
+                </div>
+            </div>
+        </div>
+
+        <!-- this is a marquee animation below the Gamers Assemble leave it as it is -->
+        <div class="relative bg-green-600 w-full h-20 overflow-hidden">
+            <div id="gamersAssembleSvg" class="absolute animate-slide flex flex-row gap-10 pt-2 whitespace-nowrap">
+            </div>
+        </div>
+    </div>
+
+    <section class="px-[4.5rem] relative overflow-hidden py-100">
+     <div class="flex justify-between">
+      <div class="relative left-[50%] -translate-x-[50%]">
+       <div class="flex-col justify-between absolute w-max -left-[22rem] pt-[48px] h-[70%] hidden xl:flex">
+        <p class="text-20 text-mid-white leading-[1.25] max-w-[16.813rem]">
+         <div class="">
+            <p>With asd asd asd asd as dasd asd </p>
+            <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+            With
+            </div>
+            <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+            Synctec
+            </div>
+            <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+            Feeds,
+            </div>
+            <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+            you
+            </div>
+            <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+            have
+            </div>
+            </div>
+
+            <div class="line" style="display: block; text-align: start; width: 100%; clip-path: polygon(0px 0px, 110% 0px, 100% 125%, 0% 125%);">
+            <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+            the
+            </div>
+            <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+            entire
+            </div>
+            <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+            gaming
+            </div>
+            <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+            world
+            </div>
+            <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+            at
+            </div>
+            <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+            your
+            </div>
+            </div>
+
+            <div class="line" style="display: block; text-align: start; width: 100%; clip-path: polygon(0px 0px, 110% 0px, 100% 125%, 0% 125%);">
+            <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+            fingertips.
+            </div>
+            </div>
+        </p>
+
+        <p class="text-20 text-mid-white leading-[1.25] max-w-[16.813rem]" data-animation="paragraph">
+         <div class="line" style="display: block; text-align: start; width: 100%; clip-path: polygon(0px 0px, 110% 0px, 100% 125%, 0% 125%);">
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           Earn
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           rewards
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           and
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           wager
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           with
+          </div>
+         </div>
+
+         <div class="line" style="display: block; text-align: start; width: 100%; clip-path: polygon(0px 0px, 110% 0px, 100% 125%, 0% 125%);">
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           Synctec
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           wallet
+          </div>
+         </div>
+        </p>
+
+       </div>
+       <img alt="mobile phone mockup" class="h-[555px] object-contain md:h-auto mobile-mockup" fetchpriority="high" height="807.552" 
+       src="./assets/mobile-mockup.png" width="396"/>
+       <div class="flex-col justify-between absolute w-max h-[91%] pt-[225px] top-0 -right-[28.5rem] hidden xl:flex">
+        <p class="text-20 text-mid-white leading-[1.25] max-w-[16.813rem]" data-animation="paragraph">
+         <div class="line" style="display: block; text-align: start; width: 100%; clip-path: polygon(0px 0px, 110% 0px, 100% 125%, 0% 125%);">
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           Discover
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           new
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           games,
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           stay
+          </div>
+         </div>
+         <div class="line" style="display: block; text-align: start; width: 100%; clip-path: polygon(0px 0px, 110% 0px, 100% 125%, 0% 125%);">
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           informed,
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           and
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           engage
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           with
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           a
+          </div>
+         </div>
+         <div class="line" style="display: block; text-align: start; width: 100%; clip-path: polygon(0px 0px, 110% 0px, 100% 125%, 0% 125%);">
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           vibrant
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           community
+          </div>
+         </div>
+        </p>
+        <p class="text-20 text-mid-white leading-[1.25] max-w-[21.25rem]" data-animation="paragraph">
+         <div class="line" style="display: block; text-align: start; width: 100%; clip-path: polygon(0px 0px, 110% 0px, 100% 125%, 0% 125%);">
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           Dive
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           into
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           your
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           personalized
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           feed
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           today
+          </div>
+         </div>
+         <div class="line" style="display: block; text-align: start; width: 100%; clip-path: polygon(0px 0px, 110% 0px, 100% 125%, 0% 125%);">
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           and
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           become
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           a
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           part
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           of
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           the
+          </div>
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           Synctec
+          </div>
+         </div>
+         <div class="line" style="display: block; text-align: start; width: 100%; clip-path: polygon(0px 0px, 110% 0px, 100% 125%, 0% 125%);">
+          <div class="word" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 120%);">
+           revolution!
+          </div>
+         </div>
+        </p>
+       </div>
+       <svg class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] -z-[1] hidden md:block" fill="none" height="478" viewbox="0 0 758 478" width="758" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_302_3487)">
+         <g clip-path="url(#clip1_302_3487)">
+          <path d="M279 237L119 20.6064H-161" stroke="white" stroke-dasharray="1 4">
+          </path>
+          <path clip-rule="evenodd" d="M121.325 17.3444L147 52.0687V58.4754H146.93L118.93 20.6066H117.707L121.325 17.3444ZM116.293 20.6066H38.3643L42.3643 17H120.293L116.293 20.6066Z" fill="url(#paint0_radial_302_3487)" fill-rule="evenodd">
+          </path>
+         </g>
+         <path d="M40.7979 17L25 1.20208L9.20208 17L25 32.7979L40.7979 17Z" opacity="0.5" stroke="white" stroke-width="1.7">
+         </path>
+         <path d="M21.2666 16.9996L24.6666 13.5996L28.0666 16.9996L24.6666 20.3996L21.2666 16.9996Z" fill="#00FEFD">
+         </path>
+        </g>
+        <g clip-path="url(#clip2_302_3487)">
+         <g clip-path="url(#clip3_302_3487)">
+          <path d="M271 241L111 457.394H-169" stroke="white" stroke-dasharray="1 4">
+          </path>
+          <path clip-rule="evenodd" d="M113.325 460.656L139 425.931V419.525H138.93L110.93 457.393H109.707L113.325 460.656ZM108.293 457.393H30.3643L34.3643 461H112.293L108.293 457.393Z" fill="url(#paint1_radial_302_3487)" fill-rule="evenodd">
+          </path>
+         </g>
+         <path d="M32.7979 461L17 476.798L1.20208 461L17 445.202L32.7979 461Z" opacity="0.5" stroke="white" stroke-width="1.7">
+         </path>
+         <path d="M13.2666 461L16.6666 457.6L20.0666 461L16.6666 464.4L13.2666 461Z" fill="#00FEFD">
+         </path>
+        </g>
+        <g clip-path="url(#clip4_302_3487)">
+         <g clip-path="url(#clip5_302_3487)">
+          <path d="M479 237L639 20.6064H919" stroke="white" stroke-dasharray="1 4">
+          </path>
+          <path clip-rule="evenodd" d="M636.675 17.3444L611 52.0687V58.4754H611.07L639.07 20.6066H640.293L636.675 17.3444ZM641.707 20.6066H719.636L715.636 17H637.707L641.707 20.6066Z" fill="url(#paint2_radial_302_3487)" fill-rule="evenodd">
+          </path>
+         </g>
+         <path d="M717.202 17L733 1.20208L748.798 17L733 32.7979L717.202 17Z" opacity="0.5" stroke="white" stroke-width="1.7">
+         </path>
+         <path d="M729.267 16.9996L732.667 13.5996L736.067 16.9996L732.667 20.3996L729.267 16.9996Z" fill="#00FEFD">
+         </path>
+        </g>
+        <g clip-path="url(#clip6_302_3487)">
+         <g clip-path="url(#clip7_302_3487)">
+          <path d="M487 241L647 457.394H927" stroke="white" stroke-dasharray="1 4">
+          </path>
+          <path clip-rule="evenodd" d="M644.675 460.656L619 425.931V419.525H619.07L647.07 457.393H648.293L644.675 460.656ZM649.707 457.393H727.636L723.636 461H645.707L649.707 457.393Z" fill="url(#paint3_radial_302_3487)" fill-rule="evenodd">
+          </path>
+         </g>
+         <path d="M725.202 461L741 476.798L756.798 461L741 445.202L725.202 461Z" opacity="0.5" stroke="white" stroke-width="1.7">
+         </path>
+         <path d="M737.267 461L740.667 457.6L744.067 461L740.667 464.4L737.267 461Z" fill="#00FEFD">
+         </path>
+        </g>
+        <defs>
+         <radialgradient cx="0" cy="0" gradienttransform="translate(120.5 18.8033) rotate(124.871) scale(62.0919 119.883)" gradientunits="userSpaceOnUse" id="paint0_radial_302_3487" r="1">
+          <stop stop-color="white">
+          </stop>
+          <stop offset="1" stop-color="white" stop-opacity="0">
+          </stop>
+         </radialgradient>
+         <radialgradient cx="0" cy="0" gradienttransform="translate(112.5 459.197) rotate(-124.871) scale(62.0919 119.883)" gradientunits="userSpaceOnUse" id="paint1_radial_302_3487" r="1">
+          <stop stop-color="white">
+          </stop>
+          <stop offset="1" stop-color="white" stop-opacity="0">
+          </stop>
+         </radialgradient>
+         <radialgradient cx="0" cy="0" gradienttransform="translate(637.5 18.8033) rotate(55.1288) scale(62.0919 119.883)" gradientunits="userSpaceOnUse" id="paint2_radial_302_3487" r="1">
+          <stop stop-color="white">
+          </stop>
+          <stop offset="1" stop-color="white" stop-opacity="0">
+          </stop>
+         </radialgradient>
+         <radialgradient cx="0" cy="0" gradienttransform="translate(645.5 459.197) rotate(-55.1288) scale(62.0919 119.883)" gradientunits="userSpaceOnUse" id="paint3_radial_302_3487" r="1">
+          <stop stop-color="white">
+          </stop>
+          <stop offset="1" stop-color="white" stop-opacity="0">
+          </stop>
+         </radialgradient>
+         <clippath id="clip0_302_3487">
+          <rect fill="white" height="138.774" transform="matrix(-1 0 0 1 279 0)" width="271">
+          </rect>
+         </clippath>
+         <clippath id="clip1_302_3487">
+          <rect fill="white" height="220" transform="matrix(-1 0 0 1 279 17)" width="244">
+          </rect>
+         </clippath>
+         <clippath id="clip2_302_3487">
+          <rect fill="white" height="138.774" transform="matrix(-1 0 0 -1 271 478)" width="271">
+          </rect>
+         </clippath>
+         <clippath id="clip3_302_3487">
+          <rect fill="white" height="220" transform="matrix(-1 0 0 -1 271 461)" width="244">
+          </rect>
+         </clippath>
+         <clippath id="clip4_302_3487">
+          <rect fill="white" height="138.774" transform="translate(479)" width="271">
+          </rect>
+         </clippath>
+         <clippath id="clip5_302_3487">
+          <rect fill="white" height="220" transform="translate(479 17)" width="244">
+          </rect>
+         </clippath>
+         <clippath id="clip6_302_3487">
+          <rect fill="white" height="138.774" transform="matrix(1 0 0 -1 487 478)" width="271">
+          </rect>
+         </clippath>
+         <clippath id="clip7_302_3487">
+          <rect fill="white" height="220" transform="matrix(1 0 0 -1 487 461)" width="244">
+          </rect>
+         </clippath>
+        </defs>
+       </svg>
+      </div>
+     </div>
+     <div class="flex items-center justify-center gap-6 mt-16">
+      <a class="click-el" href="https://www.synctecapp.com/waitlist">
+       <svg class="w-full" fill="none" height="69" viewbox="0 0 238 69" width="238" xmlns="http://www.w3.org/2000/svg">
+        <path d="M229.055 68.5947H9.50254C4.67459 68.5947 0.720459 64.7341 0.720459 60.0204V8.5745C0.720459 3.86076 4.67459 0.000179515 9.50254 0.000179515H229.055C233.883 0.000179515 237.837 3.86076 237.837 8.5745V60.0204C237.837 64.7341 233.883 68.5947 229.055 68.5947Z" fill="black">
+        </path>
+        <path d="M229.055 1.37421C233.121 1.37421 236.429 4.60459 236.429 8.5745V60.0204C236.429 63.9903 233.121 67.2207 229.055 67.2207H9.50254C5.43644 67.2207 2.12779 63.9903 2.12779 60.0204V8.5745C2.12779 4.60459 5.43644 1.37421 9.50254 1.37421H229.055ZM229.055 0.000179515H9.50254C4.67459 0.000179515 0.720459 3.86076 0.720459 8.5745V60.0204C0.720459 64.7341 4.67459 68.5947 9.50254 68.5947H229.055C233.883 68.5947 237.837 64.7341 237.837 60.0204V8.5745C237.837 3.86076 233.883 0.000179515 229.055 0.000179515Z" fill="#A6A6A6">
+        </path>
+        <path d="M84.0047 17.5675C84.0047 18.9994 83.5656 20.1463 82.7006 21.0015C81.706 22.0155 80.4107 22.5256 78.8233 22.5256C77.3062 22.5256 76.0108 22.0069 74.9482 20.9844C73.8834 19.9469 73.3521 18.6736 73.3521 17.1495C73.3521 15.6255 73.8834 14.3522 74.9482 13.3232C76.0108 12.2922 77.3062 11.7734 78.8233 11.7734C79.5786 11.7734 80.2987 11.9256 80.9859 12.2086C81.6709 12.4937 82.2285 12.8795 82.6325 13.3554L81.7148 14.26C81.01 13.4476 80.0506 13.0467 78.8233 13.0467C77.7167 13.0467 76.7573 13.424 75.9428 14.185C75.137 14.9481 74.733 15.9363 74.733 17.1495C74.733 18.3628 75.137 19.3596 75.9428 20.1227C76.7573 20.8751 77.7167 21.2609 78.8233 21.2609C79.9979 21.2609 80.9859 20.8751 81.7653 20.1141C82.279 19.6104 82.571 18.9158 82.6479 18.0284H78.8233V16.7894H83.9257C83.9872 17.0574 84.0047 17.3167 84.0047 17.5675Z" fill="white" stroke="white" stroke-miterlimit="10" stroke-width="0.186019">
+        </path>
+        <path d="M92.1005 13.2704H87.3076V16.5286H91.6284V17.7676H87.3076V21.0258H92.1005V22.2884H85.9508V12.0078H92.1005V13.2704Z" fill="white" stroke="white" stroke-miterlimit="10" stroke-width="0.186019">
+        </path>
+        <path d="M97.813 22.2884H96.4562V13.2704H93.5164V12.0078H100.755V13.2704H97.813V22.2884Z" fill="white" stroke="white" stroke-miterlimit="10" stroke-width="0.186019">
+        </path>
+        <path d="M105.993 22.2884V12.0078H107.347V22.2884H105.993Z" fill="white" stroke="white" stroke-miterlimit="10" stroke-width="0.186019">
+        </path>
+        <path d="M113.353 22.2884H112.007V13.2704H109.057V12.0078H116.304V13.2704H113.353V22.2884Z" fill="white" stroke="white" stroke-miterlimit="10" stroke-width="0.186019">
+        </path>
+        <path d="M130.009 20.9673C128.971 22.0069 127.684 22.5256 126.149 22.5256C124.606 22.5256 123.319 22.0069 122.281 20.9673C121.244 19.9298 120.729 18.6565 120.729 17.1495C120.729 15.6426 121.244 14.3693 122.281 13.3318C123.319 12.2922 124.606 11.7734 126.149 11.7734C127.675 11.7734 128.962 12.2922 130 13.3404C131.045 14.3865 131.561 15.6512 131.561 17.1495C131.561 18.6565 131.045 19.9298 130.009 20.9673ZM123.284 20.1055C124.066 20.8751 125.016 21.2609 126.149 21.2609C127.273 21.2609 128.233 20.8751 129.006 20.1055C129.785 19.336 130.18 18.3478 130.18 17.1495C130.18 15.9513 129.785 14.9631 129.006 14.1935C128.233 13.424 127.273 13.0381 126.149 13.0381C125.016 13.0381 124.066 13.424 123.284 14.1935C122.505 14.9631 122.11 15.9513 122.11 17.1495C122.11 18.3478 122.505 19.336 123.284 20.1055Z" fill="white" stroke="white" stroke-miterlimit="10" stroke-width="0.186019">
+        </path>
+        <path d="M133.463 22.2894V12.0088H135.109L140.229 20.0043H140.289L140.229 18.028V12.0088H141.584V22.2894H140.17L134.808 13.8994H134.749L134.808 15.8844V22.2894H133.463Z" fill="white" stroke="white" stroke-miterlimit="10" stroke-width="0.186019">
+        </path>
+        <path d="M120.394 37.3018C116.268 37.3018 112.898 40.3671 112.898 44.5964C112.898 48.7914 116.268 51.8889 120.394 51.8889C124.528 51.8889 127.898 48.7914 127.898 44.5964C127.898 40.3671 124.528 37.3018 120.394 37.3018ZM120.394 49.0165C118.13 49.0165 116.183 47.1923 116.183 44.5964C116.183 41.9662 118.13 40.1742 120.394 40.1742C122.657 40.1742 124.614 41.9662 124.614 44.5964C124.614 47.1923 122.657 49.0165 120.394 49.0165ZM104.039 37.3018C99.9052 37.3018 96.5439 40.3671 96.5439 44.5964C96.5439 48.7914 99.9052 51.8889 104.039 51.8889C108.171 51.8889 111.535 48.7914 111.535 44.5964C111.535 40.3671 108.171 37.3018 104.039 37.3018ZM104.039 49.0165C101.774 49.0165 99.8196 47.1923 99.8196 44.5964C99.8196 41.9662 101.774 40.1742 104.039 40.1742C106.303 40.1742 108.25 41.9662 108.25 44.5964C108.25 47.1923 106.303 49.0165 104.039 49.0165ZM84.5783 39.5376V42.6372H92.1594C91.9377 44.3692 91.3449 45.6425 90.4359 46.5299C89.3294 47.6017 87.6059 48.7914 84.5783 48.7914C79.9128 48.7914 76.2595 45.1152 76.2595 40.5601C76.2595 36.0049 79.9128 32.3287 84.5783 32.3287C87.1009 32.3287 88.9364 33.2912 90.291 34.5387L92.5283 32.3544C90.6335 30.5881 88.1131 29.2312 84.5783 29.2312C78.1805 29.2312 72.8037 34.3137 72.8037 40.5601C72.8037 46.8064 78.1805 51.8889 84.5783 51.8889C88.0362 51.8889 90.6335 50.7828 92.6754 48.7078C94.7677 46.665 95.4198 43.7926 95.4198 41.4732C95.4198 40.753 95.3583 40.0906 95.2485 39.5376H84.5783ZM164.157 41.9405C163.54 40.3093 161.637 37.3018 157.759 37.3018C153.917 37.3018 150.718 40.2578 150.718 44.5964C150.718 48.6821 153.884 51.8889 158.128 51.8889C161.56 51.8889 163.54 49.846 164.355 48.6563L161.808 46.9994C160.958 48.2126 159.801 49.0165 158.128 49.0165C156.466 49.0165 155.274 48.2726 154.51 46.8064L164.502 42.7701L164.157 41.9405ZM153.97 44.3692C153.884 41.5568 156.207 40.1163 157.871 40.1163C159.176 40.1163 160.282 40.753 160.651 41.664L153.97 44.3692ZM145.849 51.4451H149.133V30.0094H145.849V51.4451ZM140.47 38.9266H140.36C139.622 38.0735 138.215 37.3018 136.432 37.3018C132.691 37.3018 129.27 40.5086 129.27 44.62C129.27 48.7078 132.691 51.8889 136.432 51.8889C138.215 51.8889 139.622 51.1107 140.36 50.2319H140.47V51.2779C140.47 54.0667 138.944 55.5651 136.483 55.5651C134.476 55.5651 133.231 54.1503 132.717 52.9607L129.861 54.1246C130.684 56.0581 132.864 58.4375 136.483 58.4375C140.334 58.4375 143.583 56.2253 143.583 50.8428V37.7455H140.47V38.9266ZM136.713 49.0165C134.45 49.0165 132.555 47.1666 132.555 44.62C132.555 42.0498 134.45 40.1742 136.713 40.1742C138.944 40.1742 140.702 42.0498 140.702 44.62C140.702 47.1666 138.944 49.0165 136.713 49.0165ZM179.535 30.0094H171.679V51.4451H174.955V43.3231H179.535C183.173 43.3231 186.74 40.753 186.74 36.6652C186.74 32.5795 183.164 30.0094 179.535 30.0094ZM179.62 40.3414H174.955V32.9911H179.62C182.066 32.9911 183.462 34.9739 183.462 36.6652C183.462 38.3243 182.066 40.3414 179.62 40.3414ZM199.869 37.2611C197.503 37.2611 195.042 38.2814 194.029 40.5429L196.936 41.7326C197.562 40.5429 198.712 40.1571 199.929 40.1571C201.628 40.1571 203.352 41.1538 203.378 42.9137V43.1388C202.785 42.8044 201.516 42.3092 199.955 42.3092C196.824 42.3092 193.634 43.9919 193.634 47.1323C193.634 50.0047 196.199 51.8546 199.081 51.8546C201.286 51.8546 202.502 50.8835 203.266 49.7539H203.378V51.4108H206.542V43.1881C206.542 39.3875 203.635 37.2611 199.869 37.2611ZM199.474 49.0079C198.403 49.0079 196.91 48.4892 196.91 47.1923C196.91 45.5332 198.772 44.8965 200.383 44.8965C201.826 44.8965 202.502 45.2073 203.378 45.6168C203.121 47.6017 201.371 49.0079 199.474 49.0079ZM218.068 37.7305L214.303 47.0229H214.191L210.298 37.7305H206.766L212.614 50.7163L209.277 57.9423H212.7L221.713 37.7305H218.068ZM188.541 51.4451H191.825V30.0094H188.541V51.4451Z" fill="white">
+        </path>
+        <path d="M19.0492 12.928C18.5332 13.4553 18.2346 14.2763 18.2346 15.3395V53.2637C18.2346 54.3269 18.5332 55.1479 19.0492 55.6753L19.1765 55.791L40.9429 34.5481V34.0465L19.1765 12.8037L19.0492 12.928Z" fill="url(#paint0_linear_302_3588)">
+        </path>
+        <path d="M48.1886 41.6328L40.9412 34.5483V34.0467L48.1974 26.9622L48.3598 27.0543L56.9531 31.8281C59.4055 33.1828 59.4055 35.4121 56.9531 36.7755L48.3598 41.5406L48.1886 41.6328Z" fill="url(#paint1_linear_302_3588)">
+        </path>
+        <path d="M48.3615 41.5401L40.9428 34.2969L19.0491 55.6748C19.8636 56.5108 21.1919 56.6116 22.7024 55.7756L48.3615 41.5401Z" fill="url(#paint2_linear_302_3588)">
+        </path>
+        <path d="M48.3615 27.0537L22.7024 12.8182C21.1919 11.9908 19.8636 12.0915 19.0491 12.9275L40.9428 34.2969L48.3615 27.0537Z" fill="url(#paint3_linear_302_3588)">
+        </path>
+        <defs>
+         <lineargradient gradientunits="userSpaceOnUse" id="paint0_linear_302_3588" x1="39.0103" x2="10.239" y1="53.6587" y2="24.1902">
+          <stop stop-color="#00A0FF">
+          </stop>
+          <stop offset="0.0066" stop-color="#00A1FF">
+          </stop>
+          <stop offset="0.2601" stop-color="#00BEFF">
+          </stop>
+          <stop offset="0.5122" stop-color="#00D2FF">
+          </stop>
+          <stop offset="0.7604" stop-color="#00DFFF">
+          </stop>
+          <stop offset="1" stop-color="#00E3FF">
+          </stop>
+         </lineargradient>
+         <lineargradient gradientunits="userSpaceOnUse" id="paint1_linear_302_3588" x1="60.1465" x2="17.6467" y1="34.2951" y2="34.2951">
+          <stop stop-color="#FFE000">
+          </stop>
+          <stop offset="0.4087" stop-color="#FFBD00">
+          </stop>
+          <stop offset="0.7754" stop-color="#FFA500">
+          </stop>
+          <stop offset="1" stop-color="#FF9C00">
+          </stop>
+         </lineargradient>
+         <lineargradient gradientunits="userSpaceOnUse" id="paint2_linear_302_3588" x1="44.3274" x2="5.31122" y1="30.3594" y2="-9.60218">
+          <stop stop-color="#FF3A44">
+          </stop>
+          <stop offset="1" stop-color="#C31162">
+          </stop>
+         </lineargradient>
+         <lineargradient gradientunits="userSpaceOnUse" id="paint3_linear_302_3588" x1="13.538" x2="30.9604" y1="68.292" y2="50.4475">
+          <stop stop-color="#32A071">
+          </stop>
+          <stop offset="0.0685" stop-color="#2DA771">
+          </stop>
+          <stop offset="0.4762" stop-color="#15CF74">
+          </stop>
+          <stop offset="0.8009" stop-color="#06E775">
+          </stop>
+          <stop offset="1" stop-color="#00F076">
+          </stop>
+         </lineargradient>
+        </defs>
+       </svg>
+      </a>
+      <a class="click-el" href="https://www.synctecapp.com/waitlist">
+       <svg class="w-full" fill="none" height="69" viewbox="0 0 239 69" width="239" xmlns="http://www.w3.org/2000/svg">
+        <path d="M236.961 60.6835C236.961 64.339 233.938 67.3 230.199 67.3H8.92657C5.18958 67.3 2.15625 64.339 2.15625 60.6835V7.91908C2.15625 4.26532 5.18958 1.29395 8.92657 1.29395H230.197C233.938 1.29395 236.959 4.26532 236.959 7.91908L236.961 60.6835Z" fill="black">
+        </path>
+        <path d="M229.485 1.3742C233.557 1.3742 236.87 4.60458 236.87 8.57449V60.0204C236.87 63.9903 233.557 67.2207 229.485 67.2207H9.63084C5.55914 67.2207 2.24594 63.9903 2.24594 60.0204V8.57449C2.24594 4.60458 5.55914 1.3742 9.63084 1.3742H229.485ZM229.485 0.000170067H9.63084C4.79625 0.000170067 0.83667 3.86076 0.83667 8.57449V60.0204C0.83667 64.7341 4.79625 68.5947 9.63084 68.5947H229.485C234.32 68.5947 238.279 64.7341 238.279 60.0204V8.57449C238.279 3.86076 234.32 0.000170067 229.485 0.000170067Z" fill="#A6A6A6">
+        </path>
+        <path d="M53.826 33.9267C53.775 28.3997 58.4676 25.7108 58.6822 25.5856C56.0246 21.8077 51.9054 21.2916 50.4579 21.2504C46.9982 20.8954 43.6424 23.2688 41.88 23.2688C40.0825 23.2688 37.3686 21.2847 34.4437 21.343C30.6798 21.3996 27.1586 23.5243 25.2274 26.8237C21.2419 33.5511 24.2143 43.4373 28.0327 48.8751C29.9428 51.5383 32.1748 54.5119 35.0962 54.4073C37.9543 54.2924 39.0219 52.6307 42.471 52.6307C45.8884 52.6307 46.891 54.4073 49.8704 54.3404C52.9378 54.2924 54.869 51.6652 56.7123 48.978C58.9196 45.9256 59.8061 42.9194 59.8413 42.7651C59.7691 42.7411 53.8841 40.5512 53.826 33.9267Z" fill="white">
+        </path>
+        <path d="M48.1978 17.6732C49.735 15.7989 50.7868 13.2489 50.4948 10.6611C48.2699 10.7572 45.4874 12.1616 43.8851 13.9948C42.4675 15.6102 41.2011 18.258 41.5283 20.748C44.0276 20.9297 46.5937 19.5184 48.1978 17.6732Z" fill="white">
+        </path>
+        <path d="M95.1902 54.0255H91.1959L89.0079 47.3221H81.4027L79.3185 54.0255H75.4297L82.9645 31.2041H87.6184L95.1902 54.0255ZM88.3483 44.5097L86.3696 38.5506C86.1603 37.9418 85.7681 36.5082 85.1895 34.2514H85.1191C84.8887 35.222 84.5176 36.6557 84.0075 38.5506L82.064 44.5097H88.3483Z" fill="white">
+        </path>
+        <path d="M114.567 45.5948C114.567 48.3935 113.791 50.6057 112.24 52.2296C110.851 53.6753 109.125 54.3972 107.066 54.3972C104.843 54.3972 103.245 53.6187 102.273 52.0616H102.203V60.7302H98.4527V42.9865C98.4527 41.2271 98.4052 39.4213 98.3137 37.5693H101.612L101.821 40.1776H101.891C103.142 38.2123 105.04 37.2314 107.586 37.2314C109.577 37.2314 111.239 37.998 112.569 39.5328C113.902 41.0693 114.567 43.0894 114.567 45.5948ZM110.747 45.7286C110.747 44.1269 110.378 42.8065 109.635 41.7673C108.825 40.6835 107.736 40.1416 106.371 40.1416C105.446 40.1416 104.605 40.4434 103.854 41.0384C103.101 41.6386 102.609 42.4223 102.378 43.393C102.262 43.8457 102.204 44.2161 102.204 44.5076V47.2514C102.204 48.4484 102.581 49.4584 103.333 50.2833C104.086 51.1081 105.064 51.5197 106.267 51.5197C107.68 51.5197 108.779 50.9881 109.565 49.9283C110.353 48.8668 110.747 47.4675 110.747 45.7286Z" fill="white">
+        </path>
+        <path d="M133.979 45.5948C133.979 48.3935 133.204 50.6057 131.65 52.2296C130.263 53.6753 128.537 54.3972 126.478 54.3972C124.255 54.3972 122.658 53.6187 121.687 52.0616H121.616V60.7302H117.866V42.9865C117.866 41.2271 117.819 39.4213 117.728 37.5693H121.025L121.235 40.1776H121.305C122.554 38.2123 124.452 37.2314 127 37.2314C128.989 37.2314 130.651 37.998 131.985 39.5328C133.313 41.0693 133.979 43.0894 133.979 45.5948ZM130.159 45.7286C130.159 44.1269 129.788 42.8065 129.046 41.7673C128.235 40.6835 127.15 40.1416 125.783 40.1416C124.856 40.1416 124.017 40.4434 123.264 41.0384C122.512 41.6386 122.021 42.4223 121.79 43.393C121.676 43.8457 121.616 44.2161 121.616 44.5076V47.2514C121.616 48.4484 121.993 49.4584 122.742 50.2833C123.495 51.1064 124.473 51.5197 125.679 51.5197C127.092 51.5197 128.191 50.9881 128.977 49.9283C129.765 48.8668 130.159 47.4675 130.159 45.7286Z" fill="white">
+        </path>
+        <path d="M155.683 47.6251C155.683 49.5663 154.992 51.1457 153.604 52.365C152.079 53.6974 149.957 54.3628 147.229 54.3628C144.71 54.3628 142.691 53.8895 141.162 52.9412L142.031 49.8938C143.677 50.8645 145.484 51.3515 147.452 51.3515C148.864 51.3515 149.964 51.0394 150.753 50.4186C151.539 49.7978 151.932 48.9644 151.932 47.9252C151.932 46.9992 151.608 46.2189 150.959 45.5861C150.314 44.9533 149.235 44.3651 147.73 43.8215C143.632 42.3313 141.584 40.1483 141.584 37.2776C141.584 35.4015 142.302 33.8633 143.739 32.6663C145.171 31.4676 147.081 30.8691 149.469 30.8691C151.599 30.8691 153.369 31.231 154.781 31.9529L153.844 34.9334C152.524 34.2337 151.033 33.8839 149.364 33.8839C148.045 33.8839 147.014 34.2011 146.275 34.8322C145.651 35.3964 145.338 36.084 145.338 36.8986C145.338 37.8006 145.695 38.5466 146.412 39.1331C147.037 39.675 148.171 40.2615 149.818 40.8942C151.831 41.6848 153.311 42.6091 154.262 43.6689C155.21 44.7252 155.683 46.0474 155.683 47.6251Z" fill="white">
+        </path>
+        <path d="M168.082 40.3128H163.949V48.3023C163.949 50.3344 164.677 51.3496 166.137 51.3496C166.807 51.3496 167.363 51.293 167.802 51.1799L167.906 53.9562C167.167 54.2255 166.195 54.3609 164.99 54.3609C163.509 54.3609 162.352 53.9202 161.516 53.0405C160.684 52.1591 160.266 50.6808 160.266 48.6041V40.3093H157.803V37.5656H160.266V34.5525L163.949 33.4688V37.5656H168.082V40.3128Z" fill="white">
+        </path>
+        <path d="M186.731 45.661C186.731 48.1904 185.989 50.2671 184.508 51.8911C182.955 53.5631 180.893 54.3965 178.324 54.3965C175.847 54.3965 173.875 53.5957 172.405 51.994C170.935 50.3923 170.199 48.3705 170.199 45.9336C170.199 43.3836 170.956 41.2949 172.474 39.671C173.988 38.0453 176.032 37.2324 178.601 37.2324C181.078 37.2324 183.071 38.0333 184.574 39.6367C186.013 41.192 186.731 43.2002 186.731 45.661ZM182.84 45.7793C182.84 44.2616 182.508 42.9601 181.834 41.8746C181.048 40.561 179.924 39.9059 178.468 39.9059C176.96 39.9059 175.815 40.5627 175.029 41.8746C174.356 42.9618 174.023 44.2839 174.023 45.8479C174.023 47.3656 174.356 48.6671 175.029 49.7509C175.84 51.0645 176.973 51.7196 178.434 51.7196C179.866 51.7196 180.99 51.0508 181.801 49.7166C182.492 48.6105 182.84 47.2952 182.84 45.7793Z" fill="white">
+        </path>
+        <path d="M198.92 40.7846C198.549 40.7178 198.153 40.6835 197.738 40.6835C196.419 40.6835 195.399 41.1688 194.681 42.1411C194.057 42.9985 193.744 44.0823 193.744 45.3908V54.0251H189.996L190.031 42.7516C190.031 40.855 189.983 39.1281 189.89 37.571H193.156L193.293 40.7195H193.397C193.793 39.6374 194.417 38.7662 195.272 38.1129C196.108 37.5247 197.01 37.2314 197.983 37.2314C198.329 37.2314 198.642 37.2555 198.92 37.2983V40.7846Z" fill="white">
+        </path>
+        <path d="M215.69 45.0183C215.69 45.6733 215.646 46.2255 215.552 46.6765H204.303C204.347 48.3022 204.89 49.5455 205.935 50.4029C206.883 51.1695 208.109 51.5536 209.615 51.5536C211.28 51.5536 212.8 51.2947 214.166 50.7751L214.754 53.3131C213.157 53.9921 211.271 54.33 209.096 54.33C206.479 54.33 204.424 53.5789 202.929 52.0784C201.438 50.5778 200.69 48.5629 200.69 46.0352C200.69 43.5538 201.385 41.4874 202.776 39.8394C204.232 38.0799 206.201 37.2002 208.677 37.2002C211.11 37.2002 212.951 38.0799 214.202 39.8394C215.192 41.237 215.69 42.9656 215.69 45.0183ZM212.114 44.0699C212.138 42.9861 211.894 42.0498 211.386 41.2593C210.737 40.2424 209.739 39.7348 208.397 39.7348C207.171 39.7348 206.174 40.2304 205.413 41.225C204.788 42.0155 204.417 42.9639 204.303 44.0682H212.114V44.0699Z" fill="white">
+        </path>
+        <path d="M87.1095 17.1634C87.1095 19.1818 86.4886 20.7011 85.2486 21.7215C84.1001 22.6629 82.4679 23.1345 80.3538 23.1345C79.3055 23.1345 78.4085 23.0899 77.6575 23.0008V11.9725C78.6371 11.8181 79.6924 11.7393 80.8322 11.7393C82.846 11.7393 84.3639 12.1663 85.3876 13.0203C86.5343 13.9857 87.1095 15.3662 87.1095 17.1634ZM85.1659 17.2131C85.1659 15.9047 84.8107 14.9015 84.1001 14.2018C83.3895 13.5039 82.3518 13.154 80.9852 13.154C80.4048 13.154 79.9105 13.1917 79.5007 13.2706V21.6546C79.7276 21.6889 80.1427 21.7043 80.746 21.7043C82.1566 21.7043 83.2453 21.3219 84.0122 20.5571C84.779 19.7923 85.1659 18.6776 85.1659 17.2131Z" fill="white">
+        </path>
+        <path d="M97.4152 18.9268C97.4152 20.1701 97.0511 21.1887 96.323 21.9878C95.5596 22.8092 94.5483 23.2191 93.2855 23.2191C92.0684 23.2191 91.0992 22.8264 90.3764 22.0376C89.6552 21.2504 89.2947 20.2575 89.2947 19.0605C89.2947 17.8087 89.6658 16.7815 90.4115 15.9841C91.1573 15.1867 92.1598 14.7871 93.4227 14.7871C94.6398 14.7871 95.6177 15.1798 96.3582 15.9669C97.0617 16.7318 97.4152 17.7195 97.4152 18.9268ZM95.5034 18.9851C95.5034 18.2391 95.338 17.5995 95.0091 17.0662C94.6222 16.4214 94.0717 16.099 93.3558 16.099C92.6154 16.099 92.0525 16.4214 91.6656 17.0662C91.3349 17.5995 91.1714 18.2494 91.1714 19.0177C91.1714 19.7636 91.3367 20.4033 91.6656 20.9366C92.0648 21.5814 92.6206 21.9038 93.3382 21.9038C94.0418 21.9038 94.594 21.5763 94.9915 20.9195C95.3328 20.3758 95.5034 19.7311 95.5034 18.9851Z" fill="white">
+        </path>
+        <path d="M111.232 14.9512L108.638 23.035H106.949L105.875 19.5247C105.602 18.6484 105.38 17.7773 105.208 16.913H105.175C105.015 17.8013 104.793 18.6707 104.508 19.5247L103.367 23.035H101.659L99.2192 14.9512H101.114L102.051 18.7942C102.278 19.7031 102.464 20.5691 102.614 21.3888H102.647C102.784 20.7131 103.011 19.8523 103.331 18.8113L104.508 14.9529H106.01L107.138 18.729C107.41 19.6499 107.632 20.5365 107.802 21.3905H107.853C107.978 20.5588 108.166 19.6722 108.416 18.729L109.422 14.9529H111.232V14.9512Z" fill="white">
+        </path>
+        <path d="M120.788 23.0349H118.944V18.4048C118.944 16.978 118.389 16.2646 117.274 16.2646C116.727 16.2646 116.285 16.4601 115.942 16.8528C115.603 17.2455 115.43 17.7085 115.43 18.2384V23.0332H113.587V17.2609C113.587 16.551 113.564 15.781 113.52 14.9476H115.14L115.226 16.2114H115.277C115.492 15.8187 115.812 15.4946 116.232 15.2357C116.732 14.9339 117.291 14.7812 117.903 14.7812C118.677 14.7812 119.321 15.0248 119.833 15.5135C120.469 16.112 120.788 17.0054 120.788 18.1921V23.0349Z" fill="white">
+        </path>
+        <path d="M125.871 23.0353H124.029V11.2422H125.871V23.0353Z" fill="white">
+        </path>
+        <path d="M136.723 18.9268C136.723 20.1701 136.359 21.1887 135.63 21.9878C134.867 22.8092 133.854 23.2191 132.593 23.2191C131.374 23.2191 130.405 22.8264 129.684 22.0376C128.963 21.2504 128.602 20.2575 128.602 19.0605C128.602 17.8087 128.973 16.7815 129.719 15.9841C130.465 15.1867 131.467 14.7871 132.728 14.7871C133.947 14.7871 134.923 15.1798 135.666 15.9669C136.369 16.7318 136.723 17.7195 136.723 18.9268ZM134.809 18.9851C134.809 18.2391 134.644 17.5995 134.315 17.0662C133.93 16.4214 133.377 16.099 132.663 16.099C131.921 16.099 131.358 16.4214 130.973 17.0662C130.642 17.5995 130.479 18.2494 130.479 19.0177C130.479 19.7636 130.644 20.4033 130.973 20.9366C131.372 21.5814 131.928 21.9038 132.646 21.9038C133.349 21.9038 133.9 21.5763 134.297 20.9195C134.64 20.3758 134.809 19.7311 134.809 18.9851Z" fill="white">
+        </path>
+        <path d="M145.644 23.0356H143.989L143.851 22.1044H143.8C143.234 22.847 142.427 23.2191 141.378 23.2191C140.596 23.2191 139.963 22.9739 139.486 22.4868C139.053 22.0444 138.837 21.4939 138.837 20.8406C138.837 19.8528 139.259 19.1 140.109 18.5787C140.956 18.0574 142.149 17.8018 143.684 17.8138V17.6629C143.684 16.598 143.111 16.0664 141.962 16.0664C141.145 16.0664 140.423 16.267 139.801 16.6649L139.426 15.4851C140.196 15.0203 141.148 14.7871 142.27 14.7871C144.437 14.7871 145.524 15.9018 145.524 18.1311V21.1081C145.524 21.9158 145.564 22.5589 145.644 23.0356ZM143.73 20.2575V19.0108C141.697 18.9765 140.68 19.5201 140.68 20.6399C140.68 21.0618 140.796 21.3773 141.034 21.5883C141.271 21.7992 141.574 21.9038 141.934 21.9038C142.339 21.9038 142.717 21.7786 143.062 21.53C143.408 21.2796 143.621 20.9623 143.7 20.5731C143.719 20.4856 143.73 20.3793 143.73 20.2575Z" fill="white">
+        </path>
+        <path d="M156.117 23.0353H154.482L154.395 21.7372H154.344C153.822 22.7249 152.932 23.2188 151.682 23.2188C150.683 23.2188 149.851 22.8364 149.191 22.0716C148.532 21.3067 148.203 20.3138 148.203 19.0945C148.203 17.7861 148.56 16.7263 149.277 15.9169C149.972 15.1624 150.823 14.7851 151.836 14.7851C152.95 14.7851 153.729 15.1504 154.172 15.8826H154.207V11.2422H156.052V20.8574C156.052 21.6446 156.073 22.3699 156.117 23.0353ZM154.207 19.6262V18.2783C154.207 18.0451 154.19 17.8564 154.156 17.7124C154.053 17.2802 153.829 16.9167 153.49 16.6234C153.147 16.3302 152.733 16.1827 152.257 16.1827C151.569 16.1827 151.031 16.4485 150.635 16.9818C150.243 17.5152 150.044 18.196 150.044 19.0277C150.044 19.8268 150.232 20.475 150.61 20.974C151.01 21.5056 151.548 21.7715 152.222 21.7715C152.827 21.7715 153.31 21.5502 153.678 21.1061C154.033 20.6962 154.207 20.2023 154.207 19.6262Z" fill="white">
+        </path>
+        <path d="M171.882 18.9268C171.882 20.1701 171.518 21.1887 170.79 21.9878C170.026 22.8092 169.017 23.2191 167.752 23.2191C166.537 23.2191 165.568 22.8264 164.843 22.0376C164.122 21.2504 163.761 20.2575 163.761 19.0605C163.761 17.8087 164.132 16.7815 164.878 15.9841C165.624 15.1867 166.626 14.7871 167.891 14.7871C169.106 14.7871 170.086 15.1798 170.825 15.9669C171.528 16.7318 171.882 17.7195 171.882 18.9268ZM169.972 18.9851C169.972 18.2391 169.806 17.5995 169.477 17.0662C169.089 16.4214 168.54 16.099 167.822 16.099C167.084 16.099 166.521 16.4214 166.132 17.0662C165.801 17.5995 165.638 18.2494 165.638 19.0177C165.638 19.7636 165.803 20.4033 166.132 20.9366C166.531 21.5814 167.087 21.9038 167.805 21.9038C168.508 21.9038 169.062 21.5763 169.46 20.9195C169.799 20.3758 169.972 19.7311 169.972 18.9851Z" fill="white">
+        </path>
+        <path d="M181.793 23.0349H179.951V18.4048C179.951 16.978 179.395 16.2646 178.278 16.2646C177.731 16.2646 177.29 16.4601 176.949 16.8528C176.608 17.2455 176.437 17.7085 176.437 18.2384V23.0332H174.592V17.2609C174.592 16.551 174.571 15.781 174.527 14.9476H176.145L176.231 16.2114H176.282C176.499 15.8187 176.819 15.4946 177.237 15.2357C177.738 14.9339 178.296 14.7812 178.91 14.7812C179.682 14.7812 180.326 15.0248 180.838 15.5135C181.476 16.112 181.793 17.0054 181.793 18.1921V23.0349Z" fill="white">
+        </path>
+        <path d="M194.198 16.2979H192.168V20.2249C192.168 21.223 192.529 21.722 193.243 21.722C193.574 21.722 193.848 21.6946 194.064 21.638L194.112 23.0013C193.748 23.1351 193.269 23.2019 192.68 23.2019C191.952 23.2019 191.386 22.9859 190.976 22.5537C190.564 22.1216 190.36 21.3945 190.36 20.3741V16.2979H189.148V14.9517H190.36V13.4701L192.167 12.9385V14.95H194.196V16.2979H194.198Z" fill="white">
+        </path>
+        <path d="M203.957 23.0353H202.112V18.4395C202.112 16.9904 201.556 16.265 200.442 16.265C199.588 16.265 199.004 16.6852 198.684 17.5254C198.629 17.7021 198.597 17.9182 198.597 18.172V23.0336H196.756V11.2422H198.597V16.1141H198.633C199.213 15.2275 200.045 14.7851 201.123 14.7851C201.886 14.7851 202.518 15.0286 203.019 15.5173C203.643 16.1261 203.957 17.0316 203.957 18.2285V23.0353Z" fill="white">
+        </path>
+        <path d="M214.021 18.6111C214.021 18.9335 213.996 19.2044 213.952 19.4256H208.424C208.449 20.2248 208.713 20.8335 209.225 21.2554C209.692 21.6327 210.296 21.8213 211.034 21.8213C211.852 21.8213 212.598 21.6944 213.27 21.4389L213.558 22.6873C212.772 23.02 211.847 23.1863 210.776 23.1863C209.492 23.1863 208.481 22.8176 207.749 22.0802C207.014 21.3428 206.65 20.3534 206.65 19.1118C206.65 17.8925 206.989 16.8773 207.673 16.0679C208.387 15.2036 209.353 14.7715 210.572 14.7715C211.764 14.7715 212.67 15.2036 213.282 16.0679C213.776 16.7539 214.021 17.6027 214.021 18.6111ZM212.262 18.1463C212.276 17.613 212.155 17.1534 211.905 16.7659C211.585 16.2668 211.098 16.0165 210.438 16.0165C209.837 16.0165 209.346 16.26 208.971 16.7487C208.665 17.138 208.484 17.6027 208.424 18.1463H212.262Z" fill="white">
+        </path>
+       </svg>
+      </a>
+     </div>
+     <svg class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] animate-[rotatess_10s_linear_infinite] -z-[1] w-[90%] md:w-full" fill="none" height="500" viewbox="0 0 500 500" width="500" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="249.913" cy="249.913" r="208.029" stroke="white" stroke-dasharray="0.46 7.4" stroke-width="0.462801">
+      </circle>
+      <circle cx="249.913" cy="249.912" opacity="0.5" r="217.401" stroke="white" stroke-width="0.2314">
+      </circle>
+      <circle cx="249.913" cy="249.913" opacity="0.33" r="249.797" stroke="white" stroke-width="0.2314">
+      </circle>
+      <path clip-rule="evenodd" d="M18.6869 240.831C23.3379 120.31 120.164 23.4302 240.663 18.6934L241.109 19.1394C120.51 23.6594 23.5671 120.656 19.1332 241.277L18.6869 240.831ZM18.6869 258.993C23.3414 379.61 120.317 476.548 240.949 481.142L240.656 480.85L240.832 480.675C120.361 476.017 23.5635 379.076 19.1332 258.547L18.6869 258.993ZM259.168 480.85L258.993 480.675C379.407 476.019 476.171 379.166 480.685 258.716L481.131 259.162C476.393 379.7 379.452 476.55 258.876 481.142L259.168 480.85ZM481.131 240.663C476.397 120.22 379.605 23.428 259.162 18.6934L258.716 19.1394C379.259 23.6574 476.167 120.566 480.685 241.109L481.131 240.663Z" fill="white" fill-rule="evenodd" opacity="0.5">
+      </path>
+      <path d="M241.311 18.6877L249.913 10.0861L258.514 18.6877L249.913 27.2892L241.311 18.6877Z" opacity="0.5" stroke="white" stroke-width="0.925602">
+      </path>
+      <path d="M472.537 249.912L481.138 241.311L489.74 249.912L481.138 258.514L472.537 249.912Z" opacity="0.5" stroke="white" stroke-width="0.925602">
+      </path>
+      <path d="M9.91048 249.912L18.512 241.311L27.1135 249.912L18.512 258.514L9.91048 249.912Z" opacity="0.5" stroke="white" stroke-width="0.925602">
+      </path>
+      <path d="M16.6609 249.913L18.5121 248.062L20.3633 249.913L18.5121 251.764L16.6609 249.913Z" fill="#FFD300">
+      </path>
+      <path d="M479.28 249.913L481.131 248.062L482.983 249.913L481.131 251.764L479.28 249.913Z" fill="#FFD300">
+      </path>
+      <path d="M248.061 18.5114L249.912 16.6602L251.764 18.5114L249.912 20.3626L248.061 18.5114Z" fill="#FFD300">
+      </path>
+      <path d="M241.311 480.851L249.913 472.249L258.514 480.851L249.913 489.452L241.311 480.851Z" opacity="0.5" stroke="white" stroke-width="0.925602">
+      </path>
+      <path d="M248.061 480.85L249.912 478.999L251.764 480.85L249.912 482.701L248.061 480.85Z" fill="#BE0C0C">
+      </path>
+      <g filter="url(#filter0_b_302_3559)">
+       <rect fill="black" fill-opacity="0.01" height="388.753" rx="185.12" width="388.753" x="55.5361" y="55.5361">
+       </rect>
+       <rect height="388.521" rx="185.005" stroke="white" stroke-opacity="0.5" stroke-width="0.2314" width="388.521" x="55.6518" y="55.6518">
+       </rect>
+      </g>
+      <defs>
+       <filter color-interpolation-filters="sRGB" filterunits="userSpaceOnUse" height="481.313" id="filter0_b_302_3559" width="481.313" x="9.25604" y="9.25604">
+        <feflood flood-opacity="0" result="BackgroundImageFix">
+        </feflood>
+        <fegaussianblur in="BackgroundImageFix" stddeviation="23.14">
+        </fegaussianblur>
+        <fecomposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_302_3559">
+        </fecomposite>
+        <feblend in="SourceGraphic" in2="effect1_backgroundBlur_302_3559" mode="normal" result="shape">
+        </feblend>
+       </filter>
+      </defs>
+     </svg>
+     <svg class="absolute top-[50%] left-[50%] translate-x-[-50%] md:translate-y-[-50%] -z-[1] w-full h-full translate-y-[-10%]" fill="none" height="966" viewbox="0 0 1350 966" width="1350" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_302_3418)">
+       <ellipse cx="675.032" cy="411.695" fill="url(#paint0_linear_302_3418)" rx="416.157" ry="201.012" transform="rotate(152.865 675.032 411.695)">
+       </ellipse>
+      </g>
+      <defs>
+       <filter color-interpolation-filters="sRGB" filterunits="userSpaceOnUse" height="1107.73" id="filter0_f_302_3418" width="1349.33" x="0.368256" y="-142.171">
+        <feflood flood-opacity="0" result="BackgroundImageFix">
+        </feflood>
+        <feblend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape">
+        </feblend>
+        <fegaussianblur result="effect1_foregroundBlur_302_3418" stddeviation="146.522">
+        </fegaussianblur>
+       </filter>
+       <lineargradient gradientunits="userSpaceOnUse" id="paint0_linear_302_3418" x1="675.032" x2="675.032" y1="210.683" y2="612.707">
+        <stop stop-color="#370389">
+        </stop>
+        <stop offset="1" stop-color="#AD7AFF" stop-opacity="0">
+        </stop>
+       </lineargradient>
+      </defs>
+     </svg>
+    </section>
+    
+    <!-- universe marquee -->
+    <div class="relative bg-violet-600 w-full h-20 overflow-hidden">
+        <div id="univereSvg" class="absolute animate-slide flex flex-row gap-10 pt-2 whitespace-nowrap">
+        </div>
+    </div>
+
     <script src="polygonScript.js"></script>
+    <script src="marquee_svg_multiplier.js"></script>
+    <script src="popAnimation.js" defer></script>
 </body>
 </html>
