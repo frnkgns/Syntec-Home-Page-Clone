@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="controller.css">
-    <link rel="stylesheet" href="polygonShape.css">
-    <link rel="stylesheet" href="marquee_effect.css">
-    <link rel="stylesheet" href="phoneBackground.css">
-    <link rel="stylesheet" href="popAnimdation.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/controller.css">
+    <link rel="stylesheet" href="./assets/css/polygonShape.css">
+    <link rel="stylesheet" href="./assets/css/marquee_effect.css">
+    <link rel="stylesheet" href="./assets/css/phoneBackground.css">
+    <link rel="stylesheet" href="./assets/css/popAnimdation.css">
+    <link rel="stylesheet" href="./assets/css/slide_down_up.css">
+    <link rel="stylesheet" href="./assets/css/wager.css">
 </head>
 <body class="justify-center items-center flex flex-col bg-black smooth-scroll overflow-x-hidden">
 
     <!-- Introduction -->
     <div class="relative w-screen bg-black flex flex-col items-center justify-center">
-        <img class="absolute object-cover" src="./assets/controllerBg.png" alt="">
+        <img class="absolute object-cover" src="./assets/images/controllerBg.png" alt="">
         <div class="relative flex justify-center items-center bg-black">
             <div class="mb-100 absolute w-[800px] h-[800px] bg-[radial-gradient(circle,rgba(174,86,255,0.9),rgba(138,43,226,0.4),transparent)] rounded-full blur-[140px] opacity-80 z-0"></div>
             <h1 id="title" class="tracking-tighter relative z-10 translate-y-10 text-white text-8xl font-bold text-center max-w-[50rem]">
@@ -29,13 +31,14 @@
         <div class="relative animate-[float_3s_ease-in-out_infinite]">
 
             <!-- you may remove the image here and put yours into it -->
-            <img class=" max-w-[50rem] w-full -rotate-[5.5deg] animate-spring3 change" src="./assets/controller.webp">
+            <img class=" max-w-[50rem] w-full -rotate-[5.5deg] animate-spring3 change" src="./assets/images/controller.webp">
 
             <!-- this is the design you see in four corners in the controller jsut leave it as it is -->
             <svg width="1077" height="536" viewBox="0 0 1077 536" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 -left-[4.5rem] w-[112%] -z-[1]  h-full animate-spring4" style="opacity: 1;"><g clip-path="url(#clip0_1060_4225)"><g clip-path="url(#clip1_1060_4225)"><path d="M345.745 323.928L166.138 123.51L-112.626 149.795" stroke="white" stroke-dasharray="1 4"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M168.146 120.044L196.968 152.205L197.569 158.583L197.499 158.59L166.068 123.517L164.851 123.632L168.146 120.044ZM163.443 123.764L85.8582 131.08L89.502 127.114L167.086 119.798L163.443 123.764Z" fill="url(#paint0_radial_1060_4225)"></path></g><path opacity="0.5" d="M87.9426 127.261L70.7314 113.016L56.4863 130.227L73.6974 144.472L87.9426 127.261Z" stroke="white" stroke-width="1.7"></path><path d="M68.4975 129.094L71.5633 125.39L75.2675 128.456L72.2017 132.16L68.4975 129.094Z" fill="#00FEFD"></path></g><g clip-path="url(#clip2_1060_4225)"><g clip-path="url(#clip3_1060_4225)"><path d="M746.966 286.096L885.945 55.6383L1164.71 29.3533" stroke="white" stroke-dasharray="1 4"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M883.324 52.609L861.022 89.5902L861.624 95.9686L861.694 95.962L886.015 55.6319L887.232 55.5171L883.324 52.609ZM888.64 55.3843L966.225 48.0688L961.904 44.8536L884.319 52.1692L888.64 55.3843Z" fill="url(#paint1_radial_1060_4225)"></path></g><path opacity="0.5" d="M963.464 44.7066L977.709 27.4954L994.92 41.7405L980.675 58.9517L963.464 44.7066Z" stroke="white" stroke-width="1.7"></path><path d="M982.909 42.8727L979.204 39.8069L976.139 43.511L979.843 46.5768L982.909 42.8727Z" fill="#00FEFD"></path></g><g clip-path="url(#clip4_1060_4225)"><g clip-path="url(#clip5_1060_4225)"><path d="M776.762 207.954L956.369 408.372L1235.13 382.087" stroke="white" stroke-dasharray="1 4"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M954.361 411.838L925.539 379.677L924.938 373.299L925.008 373.292L956.439 408.365L957.656 408.251L954.361 411.838ZM959.064 408.118L1036.65 400.802L1033 404.768L955.421 412.084L959.064 408.118Z" fill="url(#paint2_radial_1060_4225)"></path></g><path opacity="0.5" d="M1034.56 404.621L1051.78 418.866L1066.02 401.655L1048.81 387.41L1034.56 404.621Z" stroke="white" stroke-width="1.7"></path><path d="M1054.01 402.788L1050.94 406.492L1047.24 403.427L1050.31 399.722L1054.01 402.788Z" fill="#00FEFD"></path></g><g clip-path="url(#clip6_1060_4225)"><g clip-path="url(#clip7_1060_4225)"><path d="M292.908 253.578L153.929 484.035L-124.835 510.321" stroke="white" stroke-dasharray="1 4"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M156.55 487.065L178.851 450.084L178.25 443.705L178.18 443.712L153.858 484.042L152.641 484.157L156.55 487.065ZM151.233 484.29L73.6489 491.605L77.9698 494.82L155.554 487.505L151.233 484.29Z" fill="url(#paint3_radial_1060_4225)"></path></g><path opacity="0.5" d="M76.4104 494.967L62.1652 512.178L44.954 497.933L59.1992 480.722L76.4104 494.967Z" stroke="white" stroke-width="1.7"></path><path d="M56.9654 496.801L60.6695 499.867L63.7353 496.163L60.0312 493.097L56.9654 496.801Z" fill="#00FEFD"></path></g><defs><radialGradient id="paint0_radial_1060_4225" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(167.462 121.574) rotate(119.485) scale(62.0919 119.883)"><stop stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></radialGradient><radialGradient id="paint1_radial_1060_4225" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(884.282 53.9839) rotate(49.7422) scale(62.0919 119.883)"><stop stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></radialGradient><radialGradient id="paint2_radial_1060_4225" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(955.045 410.308) rotate(-60.5154) scale(62.0919 119.883)"><stop stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></radialGradient><radialGradient id="paint3_radial_1060_4225" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(155.591 485.69) rotate(-130.258) scale(62.0919 119.883)"><stop stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></radialGradient><clipPath id="clip0_1060_4225"><rect width="147" height="139" fill="white" transform="matrix(-0.995584 0.0938752 0.0938752 0.995584 192.193 80.2668)"></rect></clipPath><clipPath id="clip1_1060_4225"><rect width="244" height="220" fill="white" transform="matrix(-0.995584 0.0938752 0.0938752 0.995584 325.093 104.9)"></rect></clipPath><clipPath id="clip2_1060_4225"><rect width="147" height="139" fill="white" transform="translate(852.266 18.0275) rotate(-5.38659)"></rect></clipPath><clipPath id="clip3_1060_4225"><rect width="244" height="220" fill="white" transform="translate(726.313 67.0679) rotate(-5.38659)"></rect></clipPath><clipPath id="clip4_1060_4225"><rect width="147" height="139" fill="white" transform="matrix(0.995584 -0.0938752 -0.0938752 -0.995584 930.314 451.615)"></rect></clipPath><clipPath id="clip5_1060_4225"><rect width="244" height="220" fill="white" transform="matrix(0.995584 -0.0938752 -0.0938752 -0.995584 797.414 426.983)"></rect></clipPath><clipPath id="clip6_1060_4225"><rect width="147" height="139" fill="white" transform="translate(187.608 521.646) rotate(174.613)"></rect></clipPath><clipPath id="clip7_1060_4225"><rect width="244" height="220" fill="white" transform="translate(313.561 472.606) rotate(174.613)"></rect></clipPath></defs></svg>
         </div>
-        <img class="absolute right-0 bottom-0 md:mr-30 md:mb-30 h-24 rounded-full" src="./assets/default logo.jpg" alt="">
-        <p class="absolute text-white bottom-0 mb-10 max-w-[13rem] text-sm ml-50">Discover a community-driven platform
+        <img class="change absolute right-0 bottom-0 md:mr-30 md:mb-30 h-24 rounded-full" src="./assets/images/default logo.jpg" alt="">
+        <p class="absolute text-white bottom-0 mb-10 max-w-[13rem] text-sm ml-[10rem]">
+            Discover a community-driven platform
             that brings gamers together to compete,
             collaborate, and stay ahead in the gaming
             universe.
@@ -49,15 +52,15 @@
             style="clip-path: polygon(74.3% 0%, 80.4% 60.5%, 20.9% 60.5%, 28.4% 0%); inset: 0px auto auto 0px; margin: 0px; width: 777px; height: 689px; max-width: 777px; max-height: 689px; padding: 0px; transform: translate(0px, 0px);"
         >
          <!--this is the background image in the review  -->
-        <img src="./assets/global.webp" alt="">
+        <img class="change" src="./assets/images/global.webp" alt="">
         </div>
     </div>
 
     <!-- Introducing put your web name -->
-    <div class="flex flex-col md:flex-row relative w-screen bg-black text-white items-center justify-center gap-30 md:gap-50 mb-50">
-        <img class="absolute" src="./assets/stream-bg.png" alt="">
+    <div class="flex flex-col md:flex-row relative w-screen bg-black text-white items-center justify-center gap-40 py-20 md:gap-50 mb-50">
+        <img class="change absolute" src="./assets/images/stream-bg.png" alt="">
         <div class="flex flex-col space-y-5">
-            <p class="text-orange-500 change">Introducing</p>
+            <p class="text-orange-500 change mt-5 md:mt-0">Introducing</p>
             <h1 class="text-7xl font-bold ">Synctec</h1>
             <p class="max-w-96 font-sans">Synctec is your gateway to a thriving and dynamic network of
                 gamers, creators, and innovators. Our platform brings together
@@ -74,51 +77,53 @@
         <div class="relative">
             <div class="mb-100 ml-30 absolute w-[200px] h-[800px] bg-[radial-gradient(circle,rgba(174,86,255,0.9),rgba(138,43,226,0.4),transparent)] rounded-full blur-[140px] opacity-80 z-0"></div>
             <!-- astra image on the right side-->
-            <img class="change translate-y-20 animate-[float2_3s_ease-in-out_infinite] h-[40rem] " src="./assets/astra_artwork.webp" alt="">
+            <img class="change translate-y-20 animate-[float2_3s_ease-in-out_infinite] h-[40rem] " src="./assets/images/astra_artwork.webp" alt="">
         </div>
     </div>
 
     <!-- Gamers Assemble -->
-    <div class="flex flex-col w-full">
+    <div class="flex flex-col w-full overflow-hidden items-center">
+        <img class="change absolute" src="./assets/images/stream-bg.png" alt="">
         <div class="relative">
-            <img class="absolute z-50" src="./assets/stream-bg.png" alt="">
-            <div class="text-white text-center justify-center justify-center flex flex-col gap-2">
-                <div class="flex flex-col items-center justify-center">
+            <img class="absolute z-50 change" src="./assets/images/stream-bg.png" alt="">
+            <div class="text-white text-center justify-center justify-center flex flex-col gap-5">
+                <div class="flex flex-col items-center justify-center gap-5">
                     <div class=" text-7xl font-bold">
                         <div style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">Gamers</div> 
                         <span class="text-orange" style="display: inline-block; position: relative;">
                             <div class="text-orange-500" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">Assemble!</div>
                         </span>
                     </div>
-                    <p class="text-center w-[50rem] flex">Our platform is designed to bring together gamers, creators, and innovators, providing a dynamic and
+                    <p class="text-center w-[40rem] flex">Our platform is designed to bring together gamers, creators, and innovators, providing a dynamic and
                         engaging environment where everyone can thrive. From streaming and wagering to community building and
                         secure transactions, Synctec is your ultimate destination for all things gaming.
                     </p>
                 </div>
 
 
-                <button class="relative flex items-center justify-center text-25 font-bebas uppercase h-24 text-btn-color" >
+                <button class="relative flex items-center justify-center text-25 font-bebas uppercase h-20 text-btn-color" >
                         <span class="relative z-10">Join Us</span>
                         <svg viewBox="0 0 444 86" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 h-full w-full black pointer-events-none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5965 20.8128L20.7876 28.9788L39.0006 10.6612L21.8953 0L28.0468 9.24172L16.5965 20.8128ZM4.34087 40.3589L8.66874 58.0371L0 49.1995L4.34087 40.3589ZM59.8256 67.9985L55.5038 76.3395L34.0195 75.5182L43.4683 50.8612L38.5674 48.172L26.6938 57.7254L26.8657 53.2287L65.8854 14.1907L74.8788 14.5345L55.4373 38.8096L50.0178 36.601L51.3448 41.155L49.6167 47.0933L59.8256 67.9985ZM60.8821 66.5378L51.6152 47.1697L77.3579 15.1296L95.8444 15.8363L60.8821 66.5378ZM22.3468 40.5468L27.4608 50.7496L63.4636 12.0967L49.4738 11.5619L33.9882 23.9794L22.3468 40.5468ZM77.0449 75.558V79.736L86.3338 77.5067L110.545 26.236L89.4136 76.7676L89.5449 76.736L91.5449 81.236L94.5656 74.8591L148.763 72.6974L155.045 59.236L151.545 73.736L151.383 73.7591L165.045 79.736V72.736L173.045 85.736L187.634 71.147L190.888 71.0172L200.545 74.236L201.272 70.6031L221.601 69.7922L227.045 75.236L228.764 69.5065L293.675 66.9174L288.079 61.824L296.42 66.808L411.045 62.236L435.045 39.736L429.699 33.0533L417.045 40.736L429.045 32.236L443.545 15.236L442.545 8.23603L161.437 13.1677L161.545 12.736L169.045 4.23603L104.545 6.23603L96.0449 20.736H96.299L60.0449 76.236L77.0449 75.558ZM144.545 33.236L153.045 25.236L147.545 36.236L144.545 33.236ZM193.545 44.236C193.545 45.8929 192.649 47.236 191.545 47.236C190.44 47.236 189.545 45.8929 189.545 44.236C189.545 42.5792 190.44 41.236 191.545 41.236C192.649 41.236 193.545 42.5792 193.545 44.236ZM132.045 40.236V36.736L126.045 33.236L132.045 40.236Z" fill="#16171B"></path></svg>
                 </button>
 
                 <div class="max-w-[100rem] w-full justify-center flex flex-col items-center">
                     <!-- put your own iamge here -->
-                    <img alt="group of fortnite characters" class="max-w-[80rem] h-full object-cover"
-                    src="./assets/assemble-img.png">
+                    <img alt="group of fortnite characters" class="change max-w-[80rem] h-full object-cover"
+                    src="./assets/images/assemble-img.png">
                 </div>
             </div>
         </div>
 
         <!-- this is a marquee animation below the Gamers Assemble leave it as it is -->
         <div class="relative bg-green-600 w-full h-20 overflow-hidden">
-            <div id="gamersAssembleSvg" class="absolute animate-slide flex flex-row gap-10 pt-2 whitespace-nowrap">
+            <div id="gamersAssembleMarquee" class="absolute animate-slide flex flex-row gap-10 pt-2 whitespace-nowrap">
             </div>
         </div>
     </div>
 
-    <section class="px-[4.5rem] relative overflow-hidden py-100">
-     <div class="flex justify-between">
+    <section class="px-[4.5rem] relative overflow-hidden py-20 bg-black">
+        
+     <div class="relative flex justify-between">
       <div class="relative left-[50%] -translate-x-[50%]">
        <div class="flex-col justify-between absolute w-max -left-[22rem] pt-[48px] h-[70%] hidden xl:flex">
         <p class="text-20 text-mid-white leading-[1.25] max-w-[16.813rem]">
@@ -199,8 +204,10 @@
         </p>
 
        </div>
-       <img alt="mobile phone mockup" class="h-[555px] object-contain md:h-auto mobile-mockup" fetchpriority="high" height="807.552" 
-       src="./assets/mobile-mockup.png" width="396"/>
+
+       <!-- Mobile Mocked Up Image -->
+       <img alt="mobile phone mockup" class="change slide-up h-[555px] object-contain md:h-auto mobile-mockup" fetchpriority="high" height="807.552" 
+       src="./assets/images/mobile-mockup.png" width="396"/>
        <div class="flex-col justify-between absolute w-max h-[91%] pt-[225px] top-0 -right-[28.5rem] hidden xl:flex">
         <p class="text-20 text-mid-white leading-[1.25] max-w-[16.813rem]" data-animation="paragraph">
          <div class="line" style="display: block; text-align: start; width: 100%; clip-path: polygon(0px 0px, 110% 0px, 100% 125%, 0% 125%);">
@@ -294,6 +301,7 @@
          </div>
         </p>
        </div>
+       
        <svg class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] -z-[1] hidden md:block" fill="none" height="478" viewbox="0 0 758 478" width="758" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_302_3487)">
          <g clip-path="url(#clip1_302_3487)">
@@ -536,7 +544,9 @@
        </svg>
       </a>
      </div>
-     <svg class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] animate-[rotatess_10s_linear_infinite] -z-[1] w-[90%] md:w-full" fill="none" height="500" viewbox="0 0 500 500" width="500" xmlns="http://www.w3.org/2000/svg">
+
+     <!-- circular animation behind the mobiel mocked up -->
+     <svg class="absolute top-[20%] left-0 animate-[rotatess_10s_linear_infinite] -z-[1] w-[90%] md:w-full" fill="none" height="500" viewbox="0 0 500 500" width="500" xmlns="http://www.w3.org/2000/svg">
       <circle cx="249.913" cy="249.913" r="208.029" stroke="white" stroke-dasharray="0.46 7.4" stroke-width="0.462801">
       </circle>
       <circle cx="249.913" cy="249.912" opacity="0.5" r="217.401" stroke="white" stroke-width="0.2314">
@@ -580,38 +590,62 @@
        </filter>
       </defs>
      </svg>
-     <svg class="absolute top-[50%] left-[50%] translate-x-[-50%] md:translate-y-[-50%] -z-[1] w-full h-full translate-y-[-10%]" fill="none" height="966" viewbox="0 0 1350 966" width="1350" xmlns="http://www.w3.org/2000/svg">
-      <g filter="url(#filter0_f_302_3418)">
-       <ellipse cx="675.032" cy="411.695" fill="url(#paint0_linear_302_3418)" rx="416.157" ry="201.012" transform="rotate(152.865 675.032 411.695)">
-       </ellipse>
-      </g>
-      <defs>
-       <filter color-interpolation-filters="sRGB" filterunits="userSpaceOnUse" height="1107.73" id="filter0_f_302_3418" width="1349.33" x="0.368256" y="-142.171">
-        <feflood flood-opacity="0" result="BackgroundImageFix">
-        </feflood>
-        <feblend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape">
-        </feblend>
-        <fegaussianblur result="effect1_foregroundBlur_302_3418" stddeviation="146.522">
-        </fegaussianblur>
-       </filter>
-       <lineargradient gradientunits="userSpaceOnUse" id="paint0_linear_302_3418" x1="675.032" x2="675.032" y1="210.683" y2="612.707">
-        <stop stop-color="#370389">
-        </stop>
-        <stop offset="1" stop-color="#AD7AFF" stop-opacity="0">
-        </stop>
-       </lineargradient>
-      </defs>
-     </svg>
+
     </section>
     
     <!-- universe marquee -->
     <div class="relative bg-violet-600 w-full h-20 overflow-hidden">
-        <div id="univereSvg" class="absolute animate-slide flex flex-row gap-10 pt-2 whitespace-nowrap">
+        <div id="universeMarquee" class="absolute animate-slide flex flex-row gap-10 pt-2 whitespace-nowrap">
         </div>
     </div>
 
-    <script src="polygonScript.js"></script>
-    <script src="marquee_svg_multiplier.js"></script>
-    <script src="popAnimation.js" defer></script>
+    <!-- Lives Stream Your Gameplay -->
+    <div class="relative bg-black text-white w-[30rem] flex flex-col items-center justify-center">
+        <img class="change absolute" src="./assets/images/stream-bg.png" alt="">
+        <h1 class="text-7xl font-bold mt-20 max-w-[50rem] text-center">Livestream Your Gameplay</h1>
+        <p class="text-center w-[20rem] py-5">You can broadcast your gameplay to your audience, connecting with fellow gamers and fans in real-time.</p>
+        <div id="polygonBox"
+            style="clip-path: polygon(25.4% 0%, 74.6% 0%, 52.4% 60.8%, 52.2% 60.5%); translate: none; rotate: none; scale: none; inset: 0px auto auto 0px; margin: 0px; max-width: 867px; width: 867px; max-height: 633px; height: 633px; padding: 0px; transform: translate(0px, 0px);"
+        >
+        <!-- your video in here -->
+        <img class="change" src="./assets/images/global.webp" alt="">
+         <!-- <video loop><source src="/assets/synctec-video.webm" type="video/webm"></video> -->
+        </div>
+    </div>
+
+    <!-- Wager for Supremacy -->
+    <div class="bg-black text-white w-full flex flex-col items-center justify-center relative">
+        <div class="right-0 absolute w-[300px] h-[800px] bg-[radial-gradient(circle,rgba(255,215,0,0.9),rgba(255,165,0,0.4),transparent)] rounded-full blur-[180px] rotate-[45deg] z-0"></div>
+        <div class="left-0 absolute w-[300px] h-[800px]  bg-[radial-gradient(circle,rgba(174,86,255,0.9),rgba(138,43,226,0.4),transparent)] rounded-full blur-[180px] rotate-[-45deg] z-0"></div>
+
+        <!-- <div class="right-0 mt-50 absolute w-[200px] h-[800px] bg-[radial-gradient(circle,rgba(255,215,0,0.9),rgba(255,165,0,0.4),transparent)] rounded-full blur-[140px] z-0"></div> -->
+
+        <img class="change absolute" src="./assets/images/stream-bg.png" alt="">
+        <h1 class="text-7xl font-bold mt-20 max-w-[50rem] text-center">Wager for Supremacy</h1>
+        <p class="text-center w-[30rem] py-5">Synctec Wager transforms your gaming skills into opportunities
+            to earn. Engage in competitive matches, place wagers, and win
+                big, all within a secure and transparent platform.</p> 
+        <div class="flex justify-between items-center gap-10 mt-10">
+            <div>
+                <img id="wagerL" class="h-[30rem] w-[17rem] max-w- animate-[float_3s_ease-in-out_infinite] fade-img" src="./assets/images/wager/left/battle-1.png" alt="">
+            </div>
+            <img id="vs" class="h-[10rem]" src="./assets/images/wager/vs.png" alt="">
+            <div>
+                <img id="wagerR" class="h-[30rem] w-[17rem] animate-[float_3s_ease-in-out_infinite] fade-img"  src="./assets/images/wager/right/battle-2.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Wager Marquee -->
+    <div class="relative bg-red-600 w-full h-20 overflow-hidden">
+        <div id="wagerMarquee" class="absolute animate-slide flex flex-row gap-10 pt-2 whitespace-nowrap">
+        </div>
+    </div>
+
+    <script src="./assets/js/polygonScript.js"></script>
+    <script src="./assets/js/marquee_svg_multiplier.js"></script>
+    <script src="./assets/js/popAnimation.js"></script>
+    <script src="./assets/js/slide_down_up.js"></script>
+    <script src="./assets/js/wager.js"></script>
 </body>
 </html>
