@@ -1,3 +1,6 @@
+
+// put you assets images in the following directories:
+// then change this code to match your images paths
 const wagerLeft = [
   "./assets/images/wager/left/battle-1.png",
   "./assets/images/wager/left/battle-3.png",

@@ -1,0 +1,9 @@
+@keyframes allGameslide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-allGameslide {
+    width: max-content;
+    flex-shrink: 0;
+    animation: allGameslide 100s linear infinite;
+}
