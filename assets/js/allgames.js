@@ -20,7 +20,7 @@ const GameImageContainer = document.getElementById("gameImageContainer");
 GameImageContainer.innerHTML = `
   <div class="flex animate-allGameslide">
     ${[...GamesImage, ...GamesImage, ...GamesImage, ...GamesImage].map((image, index) => {
-      return `<img src="${image}" alt="Game Image ${index + 1}" class="rounded w-full object-cover mr-5" />`;
+      return `<img src="${image}" alt="Game Image ${index + 1}" class="rounded w-full object-cover mr-5 xl:h-full h-64" />`;
     }).join('')}
   </div>
 `;
