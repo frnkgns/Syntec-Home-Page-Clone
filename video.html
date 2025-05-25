@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Clip-path Reveal Demo</title>
+<style>
+
+  /* Container with initial clip-path (4 points) */
+  .clip-container {
+    width: 80vw;
+    height: 60vh;
+    margin: 150vh auto 0; /* so it appears after scrolling down */
+    overflow: hidden;
+    transition: clip-path 1.5s ease-in-out;
+    clip-path: polygon(50% 0%, 70% 30%, 50% 60%, 30% 30%);
+    background: url('https://picsum.photos/800/600') center/cover no-repeat;
+  }
+
+  /* Revealed clip-path */
+  .clip-container.reveal {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+</style>
+</head>
+<body>
+
+<div class="clip-container" id="clipTarget"></div>
+
+<script>
+  const target = document.getElementById('clipTarget');
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        target.classList.add('reveal');
+      } else {
+        target.classList.remove('reveal');
+      }
+    },
+    { threshold: 0.1 }
+  );
+  observer.observe(target);
+</script>
+
+</body>
+</html>

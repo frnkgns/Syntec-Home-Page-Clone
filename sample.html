@@ -1,97 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>SVG Mask Trapezoid Hole Reveal</title>
-<style>
-  html, body {
-    margin: 0; height: 100%; overflow: hidden;
-  }
-  .scroll-container {
-    width: 100vw; height: 100vh; overflow-y: auto; position: relative;
-  }
-  .image-container {
-    position: relative; width: 100%; height: 200vh; /* tall so we can scroll */
-  }
-  .image-container img {
-    position: absolute; top: 0; left: 0;
-    width: 100%; height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  .overlay {
-    position: absolute; top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: white;
-    pointer-events: none;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clip Path Reveal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    /* apply SVG mask */
-    -webkit-mask-image: url(#mask);
-    mask-image: url(#mask);
-    mask-repeat: no-repeat;
-    mask-size: 100% 100%;
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: 100% 100%;
-  }
-</style>
+  <style>
+    [data-animation="global"] {
+      clip-path: polygon(74.3% 0%, 80.4% 60.5%, 20.9% 60.5%, 28.4% 0%);
+      transition: clip-path 1.5s ease-in-out;
+    }
+
+    .reveal-clip {
+      clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%);
+    }
+  </style>
 </head>
-<body>
+<body class="bg-gray-100">
 
-<div class="scroll-container" id="scrollContainer">
-  <div class="image-container">
-    <img src="/assets/images/global.webp" alt="Image" />
-    <div class="overlay"></div>
+  <div class="flex flex-col top-0">
+    <div class="home_global-pic__2yf2z w-full mx-auto" data-animation="global">
+      <img
+        alt=""
+        loading="lazy"
+        width="auto"
+        src="/assets/images/global.webp"
+        class="w-full h-auto"
+        style="color: transparent;"
+      />
+        <div class="absolute top-0 z-10 left-[50%] -translate-x-[50%] md:translate-x-0 md:left-0 lg:left-[10%]  translate-cards ">
+          <div class="flex flex-col">
 
-    <!-- Define SVG mask inline -->
-    <svg width="0" height="0" style="position:absolute" xmlns="http://www.w3.org/2000/svg" >
-      <mask id="mask" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
-        <!-- Full white rectangle (visible) -->
-        <rect width="1" height="1" fill="white"/>
-        <!-- Black trapezoid hole -->
-        <polygon id="hole" fill="black" points="0.793 0 0.914 0.425 0.069 0.425 0.224 0"/>
-      </mask>
-    </svg>
+          </div>
+        </div>
+        <div class="absolute top-0 z-10 right-0 lg:right-[10%]  hidden md:block translate-cards ">
+          <div class="flex flex-col animate-marquee2">
+
+          </div>
+        </div>
+      </div>
+
+    <!-- Spacer to allow full scroll -->
+    <div class="h-[150vh]"></div>
   </div>
-</div>
 
-<script>
-  const scrollContainer = document.getElementById('scrollContainer');
-  const hole = document.getElementById('hole');
 
-  // Starting trapezoid points (objectBoundingBox coords, 0 to 1)
-  const startPoints = [
-    {x: 0.793, y: 0},
-    {x: 0.914, y: 0.425},
-    {x: 0.069, y: 0.425},
-    {x: 0.224, y: 0}
-  ];
 
-  // End points (full rectangle covering the mask)
-  const endPoints = [
-    {x: 1, y: 0},
-    {x: 1, y: 1},
-    {x: 0, y: 1},
-    {x: 0, y: 0}
-  ];
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const target = document.querySelector('[data-animation="global"]');
 
-  function lerp(start, end, t) {
-    return start + (end - start) * t;
-  }
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            target.classList.add('reveal-clip');
+          } else {
+            target.classList.remove('reveal-clip');
+          }
+        },
+        {
+          threshold: 0.3
+        }
+      );
 
-  scrollContainer.addEventListener('scroll', () => {
-    const scrollTop = scrollContainer.scrollTop;
-    const maxScroll = scrollContainer.scrollHeight - scrollContainer.clientHeight;
-    const progress = Math.min(scrollTop / maxScroll, 1);
-
-    const points = startPoints.map((p, i) => {
-      const ep = endPoints[i];
-      return `${lerp(p.x, ep.x, progress)} ${lerp(p.y, ep.y, progress)}`;
-    }).join(' ');
-
-    hole.setAttribute('points', points);
-  });
-</script>
-
+      if (target) observer.observe(target);
+    });
+  </script>
 </body>
 </html>
+
+
+
+
+
+

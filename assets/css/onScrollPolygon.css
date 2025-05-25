@@ -1,0 +1,8 @@
+    [data-animation="global"] {
+      clip-path: polygon(74.3% 0%, 80.4% 60.5%, 20.9% 60.5%, 28.4% 0%);
+      transition: clip-path 1s ease-in-out;
+    }
+
+    .reveal-clip {
+      clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%);
+    }

@@ -10,13 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/controller.css">
-    <link rel="stylesheet" href="/assets/css/polygonShape.css">
     <link rel="stylesheet" href="/assets/css/marquee_effect.css">
     <link rel="stylesheet" href="/assets/css/phoneBackground.css">
     <link rel="stylesheet" href="/assets/css/popAnimdation.css">
     <link rel="stylesheet" href="/assets/css/slide_down_up.css">
     <link rel="stylesheet" href="/assets/css/wager.css">
     <link rel="stylesheet" href="/assets/css/allgames.css">
+    <link rel="stylesheet" href="/assets/css/onScrollPolygon.css">
+    <link rel="stylesheet" href="/assets/css/onScrollTriangle.css">
+    <link rel="stylesheet" href="/assets/css/communityMarquee.css">
 </head>
 <body class="justify-center items-center flex flex-col bg-black smooth-scroll overflow-x-hidden ">
 
@@ -25,7 +27,7 @@
         <img class="absolute object-cover" src="/assets/images/controllerBg.png" alt="">
         <div class="relative flex justify-center items-center bg-black">
             <div class="xl:mb-100 absolute w-[500px] h-[500px] xl:w-[800px] xl:h-[800px] bg-[radial-gradient(circle,rgba(174,86,255,0.9),rgba(138,43,226,0.4),transparent)] rounded-full blur-[140px] opacity-80 z-0"></div>
-            <h1 id="title" class="tracking-tighter relative z-10 translate-y-10 text-white text-3xl xl:text-8xl font-bold text-center w-[15rem] xl:w-[50rem]">
+            <h1 id="title" class="tracking-tighter relative z-10 translate-y-10 text-white text-3xl xl:text-7xl font-bold text-center w-[15rem] xl:w-[40rem]">
                 The Ultimate Gaming Social Network
             </h1>
         </div>        
@@ -49,32 +51,26 @@
     <!-- Right at the heart of gaming -->
     <!-- Carousel for community like posting or reviews you can put it in here -->
     <div class="bg-white w-screen flex flex-col items-center justify-center h-fit overflow-x-hidden">
-        <h1 class="text-3xl xl:text-8xl font-bold mt-20 mb-20 w-[15rem] xl:w-[50rem] text-center">Right at the heart of <span class="text-blue-500">Global</span> gaming</h1>
-        <div class="scroll-container scroll-hidden" id="scrollContainer">
-            <div class="image-container">
-                <img src="/assets/images/global.webp" alt="Image" />
-                <div class="overlay"></div>
+        <h1 class="text-3xl xl:text-7xl font-bold mt-20 mb-20 w-[15rem] xl:w-[50rem] text-center">
+            Right at the heart of <span class="text-blue-500">Global</span> gaming
+        </h1>
 
-                <!-- Define SVG mask inline -->
-                <svg width="0" height="0" style="position:absolute" xmlns="http://www.w3.org/2000/svg" >
-                <mask id="mask" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
-                    <!-- Full white rectangle (visible) -->
-                    <rect width="1" height="1" fill="white"/>
-                    <!-- Black trapezoid hole -->
-                    <polygon id="hole" fill="black" points="0.793 0 0.914 0.425 0.069 0.425 0.224 0"/>
-                </mask>
-                </svg>
+        <!-- Your polygon image section -->
+        <div class="w-full mx-auto relative" data-animation="global">
+            <img alt="" width="auto" src="/assets/images/global.webp" class="w-full"style="color: transparent;"/>
+            <div id="CommunityImageContainerLeft" class="cmMarquee hidden absolute top-0 z-10 left-[50%] w-96 h-full -translate-x-[50%] md:translate-x-0 md:left-0 lg:left-[10%] overflow-hidden">
+            </div>
+            <div id="CommunityImageContainerRight" class="cmMarquee absolute top-0 z-10 right-0 lg:right-[10%] w-96 h-full hidden overflow-hidden">
             </div>
         </div>
     </div>
 
-    
     <!-- Introducing put your web name -->
     <div class="flex flex-col md:flex-row relative w-screen bg-black text-white items-center justify-center gap-40 py-20 md:gap-50 mb-50 overflow-hidden">
         <img class="change absolute" src="/assets/images/stream-bg.png" alt="">
         <div class="flex flex-col space-y-5 text-center xl:text-left items-center">
             <h2 class="text-orange-500 change mt-5 md:mt-0">Introducing</h2>
-            <h1 class="text-4xl xl:text-8xl font-bold ">Synctec</h1>
+            <h1 class="text-4xl xl:text-7xl font-bold ">Synctec</h1>
             <p class="w-[20rem] xl:w-96 font-sans">Synctec is your gateway to a thriving and dynamic network of
                 gamers, creators, and innovators. Our platform brings together
                 passionate individuals from across Africa, fostering
@@ -103,7 +99,7 @@
             <img class="absolute z-50 change" src="/assets/images/stream-bg.png" alt="">
             <div class="text-white text-center items-center justify-center flex flex-col gap-5">
                 <div class="flex flex-col items-center justify-center gap-5 mt-20">
-                    <div class="text-3xl xl:text-8xl font-bold flex flex-row gap-2 xl:gap-5">
+                    <div class="text-3xl xl:text-7xl font-bold flex flex-row gap-2 xl:gap-5">
                         <div style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">Gamers</div> 
                         <span class="text-orange" style="display: inline-block; position: relative;">
                             <div class="text-orange-500" style="display: inline-block; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">Assemble!</div>
@@ -223,7 +219,7 @@
        </div>
 
        <!-- Mobile Mocked Up Image -->
-        <img alt="mobile phone mockup" class="change slide-up h-[555px] object-contain md:h-auto" fetchpriority="high" height="807.552" 
+        <img alt="mobile phone mockup" class="change slide-up h-[555px] object-contain md:h-auto" height="807.552" 
         src="/assets/images/mobile-mockup.png" width="396"/>
 
        <div class="flex-col justify-between absolute w-max h-[91%] pt-[225px] top-0 -right-[28.5rem] hidden xl:flex">
@@ -622,14 +618,18 @@
     <!-- Lives Stream Your Gameplay -->
     <div class="relative bg-black text-white w-full flex flex-col items-center justify-center overflow-hidden">
         <img class="change absolute" src="/assets/images/stream-bg.png" alt="">
-        <h1 class="text-3xl w-[20rem] xl:text-8xl font-bold mt-20 xl:w-[40rem] text-center">Livestream Your Gameplay</h1>
+        <h1 class="text-3xl w-[20rem] xl:text-7xl font-bold mt-20 xl:w-[40rem] text-center">Livestream Your Gameplay</h1>
         <p class="text-center w-[20rem] py-5">You can broadcast your gameplay to your audience, connecting with fellow gamers and fans in real-time.</p>
-        <div id="polygonBox"
-            style="clip-path: polygon(25.4% 0%, 74.6% 0%, 52.4% 60.8%, 52.2% 60.5%); translate: none; rotate: none; scale: none; inset: 0px auto auto 0px; margin: 0px; max-width: 867px; width: 867px; max-height: 633px; height: 633px; padding: 0px; transform: translate(0px, 0px);"
-        >
-        <!-- your video in here -->
-        <img class="change" src="/assets/images/global.webp" alt="">
-         <!-- <video loop><source src="/assets/synctec-video.webm" type="video/webm"></video> -->
+        
+        <div class="flex w-full h-screen mx-auto relative overflow-hidden items-center justify-center mt-20" data-animation="triangle">
+            <video id="videoPlayer"
+                muted loop playsinline
+                src="/assets/video/video.mp4"
+                class="w-full h-full object-cover"
+                style="color: transparent;"
+            ></video>       
+            
+            <button class="playvid absolute bg-black p-7 rounded-full opacity-0 z-50">PLAY</button>
         </div>
     </div>
 
@@ -642,7 +642,7 @@
         <!-- <div class="right-0 mt-50 absolute w-[200px] h-[800px] bg-[radial-gradient(circle,rgba(255,215,0,0.9),rgba(255,165,0,0.4),transparent)] rounded-full blur-[140px] z-0"></div> -->
 
         <img class="change absolute" src="/assets/images/stream-bg.png" alt="">
-        <h1 class="text-3xl xl:text-8xl font-bold p-10  text-center">Wager for Supremacy</h1>
+        <h1 class="text-3xl xl:text-7xl font-bold p-10  text-center">Wager for Supremacy</h1>
         <p class="text-center w-[20rem] xl:w-[30rem] pl-4 pr-4">Synctec Wager transforms your gaming skills into opportunities
             to earn. Engage in competitive matches, place wagers, and win
                 big, all within a secure and transparent platform.</p> 
@@ -667,7 +667,7 @@
         <img class="change absolute" src="/assets/images/stream-bg.png" alt="">
         <div class="flex flex-col space-y-5 items-center">
             <p class="text-orange-500 change mt-5 md:mt-0">Introducing</p>
-            <h1 class="text-3xl xl:text-8xl font-bold ">Synctec Wallet</h1>
+            <h1 class="text-3xl xl:text-7xl font-bold ">Synctec Wallet</h1>
             <p class="xl:w-[35rem] font-sans text-center pl-10 pr-10 xl:p-0">The Synctec Wallet is your all-in-one solution for handling transactions within the
                 Synctec ecosystem. Designed for gamers, it provides a secure and seamless way
                 to manage your funds, and earn rewards
@@ -684,7 +684,7 @@
 
     <!-- All Your Favorite Games Section -->
      <div class="flex flex-col relative w-screen bg-white text-black items-center justify-center gap-10 py-20 overflow-hidden">
-        <h1 class="text-3xl xl:text-8xl font-bold text-center">All Your Favorite Games</h1>
+        <h1 class="text-3xl xl:text-7xl font-bold text-center">All Your Favorite Games</h1>
         <p class="xl:w-[35rem] font-sans text-center pl-10 pr-10 xl:p-0">Synctec Feeds brings all your favorite gaming content into one
             place. Stay up-to-date with the latest news, trends, and updates
             from the gaming world, tailored to your interests.</p>
@@ -699,7 +699,7 @@
         <img class="change absolute" src="/assets/images/stream-bg.png" alt="">
         <div class="flex flex-col space-y-5 items-center">
             <p class="text-orange-500 change mt-5 md:mt-0">Introducing</p>
-            <h1 class="text-3xl xl:text-8xl font-bold w-[20rem] text-center xl:w-fit">Frequently Asked Questions</h1>
+            <h1 class="text-3xl xl:text-7xl font-bold w-[20rem] text-center xl:w-fit">Frequently Asked Questions</h1>
             <p class="max-w-96 font-sans">This sections has not yet been implmented
             </p>
         </div>
@@ -829,6 +829,9 @@
     <script src="/assets/js/slide_down_up.js"></script>
     <script src="/assets/js/wager.js"></script>
     <script src="/assets/js/allgames.js"></script>
-    <script src="/assets/js/polygonScript.js"></script>
+    <script src="/assets/js/onScrollPollygon.js"></script>
+    <script src="/assets/js/onScrollTriangle.js"></script>
+    <script src="/assets/js/communityMarquee.js"></script>
+    <script src="/assets/js/playVid.js"></script>
 </body>
 </html>

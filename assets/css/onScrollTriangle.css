@@ -1,0 +1,20 @@
+[data-animation="triangle"] {
+  /* initial upside-down triangle inside a small trapezoid shape, points reordered */
+  clip-path: polygon(
+    35% 30%,   /* top left */
+    65% 30%,   /* top right */
+    50% 70%,   /* bottom center (for triangle, two points same) */
+    50% 70%    /* bottom center again to keep 4 points */
+  );
+  transition: clip-path 1s ease-in-out;
+}
+
+[data-animation="triangle"].reveal-clip1 {
+  /* full rectangle */
+  clip-path: polygon(
+    0% 0%,     /* top left */
+    100% 0%,   /* top right */
+    100% 100%, /* bottom right */
+    0% 100%    /* bottom left */
+  );
+}
