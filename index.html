@@ -50,14 +50,25 @@
     <!-- Carousel for community like posting or reviews you can put it in here -->
     <div class="bg-white w-screen flex flex-col items-center justify-center h-fit overflow-x-hidden">
         <h1 class="text-3xl xl:text-8xl font-bold mt-20 mb-20 w-[15rem] xl:w-[50rem] text-center">Right at the heart of <span class="text-blue-500">Global</span> gaming</h1>
-        <div id="polygonBox" class="bg-white"
-            style="clip-path: polygon(74.3% 0%, 80.4% 60.5%, 20.9% 60.5%, 28.4% 0%); inset: 0px auto auto 0px; margin: 0px; width: 777px; height: 689px; max-width: 777px; max-height: 689px; padding: 0px; transform: translate(0px, 0px);"
-        >
-         <!--this is the background image in the review  -->
-        <img class="change" src="/assets/images/global.webp" alt="">
+        <div class="scroll-container scroll-hidden" id="scrollContainer">
+            <div class="image-container">
+                <img src="/assets/images/global.webp" alt="Image" />
+                <div class="overlay"></div>
+
+                <!-- Define SVG mask inline -->
+                <svg width="0" height="0" style="position:absolute" xmlns="http://www.w3.org/2000/svg" >
+                <mask id="mask" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
+                    <!-- Full white rectangle (visible) -->
+                    <rect width="1" height="1" fill="white"/>
+                    <!-- Black trapezoid hole -->
+                    <polygon id="hole" fill="black" points="0.793 0 0.914 0.425 0.069 0.425 0.224 0"/>
+                </mask>
+                </svg>
+            </div>
         </div>
     </div>
 
+    
     <!-- Introducing put your web name -->
     <div class="flex flex-col md:flex-row relative w-screen bg-black text-white items-center justify-center gap-40 py-20 md:gap-50 mb-50 overflow-hidden">
         <img class="change absolute" src="/assets/images/stream-bg.png" alt="">
@@ -818,5 +829,6 @@
     <script src="/assets/js/slide_down_up.js"></script>
     <script src="/assets/js/wager.js"></script>
     <script src="/assets/js/allgames.js"></script>
+    <script src="/assets/js/polygonScript.js"></script>
 </body>
 </html>

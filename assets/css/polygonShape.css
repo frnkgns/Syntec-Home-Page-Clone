@@ -1,12 +1,34 @@
-.polygon-shape {
-      clip-path: polygon(79.3% 0%, 91.4% 42.5%, 6.9% 42.5%, 22.4% 0%);
-      width: 454px;
-      height: 689px;
-      transition: clip-path 1.2s ease-in-out, width 1.2s ease-in-out, height 1.2s ease-in-out;
-    }
+  .scroll-container {
+    width: 100vw; height: 100vh; overflow-y: auto; position: relative;
+  }
+  .image-container {
+    position: relative; width: 100%; height: 200vh; /* tall so we can scroll */
+  }
+  .image-container img {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .overlay {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: white;
+    pointer-events: none;
 
-    .polygon-expanded {
-      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-      width: 100vw;
-      height: 100vh;
-    }
+    /* apply SVG mask */
+    -webkit-mask-image: url(#mask);
+    mask-image: url(#mask);
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+  }
+
+  .scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.scroll-container:hover {
+  scroll-behavior: smooth; /* smooth scroll on hover */
+}
