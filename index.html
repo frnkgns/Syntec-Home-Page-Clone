@@ -57,8 +57,8 @@
 
         <!-- Your polygon image section -->
         <div class="w-full mx-auto relative" data-animation="global">
-            <img alt="" width="auto" src="/assets/images/global.webp" class="w-full"style="color: transparent;"/>
-            <div id="CommunityImageContainerLeft" class="cmMarquee hidden absolute top-0 z-10 left-[50%] w-96 h-full -translate-x-[50%] md:translate-x-0 md:left-0 lg:left-[10%] overflow-hidden">
+            <img alt="" width="auto" src="/assets/images/global.webp" class="w-full xl:h-auto h-96"style="color: transparent;"/>
+            <div id="CommunityImageContainerLeft" class="cmMarquee hidden absolute top-0 z-10 left-[50%] w-96 h-full md:translate-x-0 md:left-0 lg:left-[10%] overflow-hidden">
             </div>
             <div id="CommunityImageContainerRight" class="cmMarquee absolute top-0 z-10 right-0 lg:right-[10%] w-96 h-full hidden overflow-hidden">
             </div>
@@ -119,9 +119,9 @@
                     </button>
                 </div>
 
-                <div class="max-w-[100rem] w-full justify-center flex flex-col items-center">
+                <div class="w-[50rem] xl:w-[80rem] justify-center flex flex-col items-center">
                     <!-- put your own iamge here -->
-                    <img alt="group of fortnite characters" class="change w-full xl:w-[80rem] h-full object-cover"
+                    <img alt="group of fortnite characters" class="change object-cover"
                     src="/assets/images/assemble-img.png">
                 </div>
             </div>
@@ -219,6 +219,7 @@
        </div>
 
        <!-- Mobile Mocked Up Image -->
+        <div class="absolute xl:translate-x-20 w-[200px] h-[800px]  bg-[radial-gradient(circle,rgba(174,86,255,0.9),rgba(138,43,226,0.4),transparent)] rounded-full blur-[140px] opacity-80 z-0"></div>
         <img alt="mobile phone mockup" class="change slide-up h-[555px] object-contain md:h-auto" height="807.552" 
         src="/assets/images/mobile-mockup.png" width="396"/>
 
@@ -623,13 +624,12 @@
         
         <div class="flex w-full h-screen mx-auto relative overflow-hidden items-center justify-center mt-20" data-animation="triangle">
             <video id="videoPlayer"
-                muted loop playsinline
                 src="/assets/video/video.mp4"
                 class="w-full h-full object-cover"
                 style="color: transparent;"
             ></video>       
             
-            <button class="playvid absolute bg-black p-7 rounded-full opacity-0 z-50">PLAY</button>
+            <button class="playvid absolute bg-black p-7 rounded-full opacity-0 transition-opacity duration-500 z-50">PLAY</button>
         </div>
     </div>
 
@@ -646,12 +646,12 @@
         <p class="text-center w-[20rem] xl:w-[30rem] pl-4 pr-4">Synctec Wager transforms your gaming skills into opportunities
             to earn. Engage in competitive matches, place wagers, and win
                 big, all within a secure and transparent platform.</p> 
-        <div class="flex justify-between items-center gap-2 xl:gap-10 mt-10">
-            <div class="xl:ml-10 xl:m-0">
-                <img id="wagerL" class=" h-[20rem] w-[20rem] xl:h-[30rem] xl:w-[17rem] animate-[float_3s_ease-in-out_infinite] fade-img" src="/assets/images/wager/left/battle-1.png" alt="">
+        <div class="flex justify-between items-center xl:gap-10 mt-10">
+            <div class="translate-x-5">
+                <img id="wagerL" class="h-[20rem] w-[20rem] xl:h-[30rem] xl:w-[17rem] animate-[float_3s_ease-in-out_infinite] fade-img" src="/assets/images/wager/left/battle-1.png" alt="">
             </div>
             <img id="vs" class="-translate-y-10  h-[5rem] xl:h-[10rem] " src="/assets/images/wager/vs.png" alt="">
-            <div class="xl:mr-10 xl:m-0">
+            <div class="-translate-x-5">
                 <img id="wagerR" class="h-[20rem] w-[20rem] xl:h-[30rem] xl:w-[17rem] animate-[float_3s_ease-in-out_infinite] fade-img"  src="/assets/images/wager/right/battle-2.png" alt="">
             </div>
         </div>
@@ -700,7 +700,6 @@
         <div class="flex flex-col space-y-5 items-center">
             <p class="text-orange-500 change mt-5 md:mt-0">Introducing</p>
             <h1 class="text-3xl xl:text-7xl font-bold w-[20rem] text-center xl:w-fit">Frequently Asked Questions</h1>
-            <p class="max-w-96 font-sans">This sections has not yet been implmented
             </p>
         </div>
         <div class="relative">

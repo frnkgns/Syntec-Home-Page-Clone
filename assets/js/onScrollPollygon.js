@@ -32,20 +32,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const globalObserver = new IntersectionObserver(
       ([entry]) => {
         const marquees = document.querySelectorAll('.cmMarquee');
+        const marqueesLeft = document.getElementById('CommunityImageContainerLeft');
         if (entry.isIntersecting) {
-
-          console.log('Trapezoid observer triggered', entry.isIntersecting); // 👈 ADD THIS
+          console.log('Trapezoid observer triggered', entry.isIntersecting);
 
           globalTarget.classList.add('reveal-clip');
 
-          marquees.forEach(el => {
-            el.classList.remove('hidden');
-            el.classList.add('opacity-0', 'transition-opacity', 'duration-[1000ms]');
+          const isXL = window.matchMedia('(min-width: 1280px)').matches;
 
-            setTimeout(() => {
-              el.classList.replace('opacity-0', 'opacity-100');
-            }, 100);
-          });
+          if (isXL) {
+            marquees.forEach(el => {
+              el.classList.remove('hidden');
+              el.classList.add('opacity-0', 'transition-opacity', 'duration-[1000ms]');
+
+              setTimeout(() => {
+                el.classList.replace('opacity-0', 'opacity-100');
+              }, 100);
+            });
+          } else {
+            // Only show the left marquee (assumes it has an ID or class to select it)
+            const leftMarquee = document.getElementById('CommunityImageContainerLeft');
+            if (leftMarquee) {
+              leftMarquee.classList.remove('hidden', 'lg:left-[10%]', 'left-[50%]');
+              leftMarquee.classList.add('opacity-0', 'transition-opacity', 'duration-[1000ms]', 'left-[30%]');
+
+              setTimeout(() => {
+                leftMarquee.classList.replace('opacity-0', 'opacity-100');
+              }, 100);
+            }
+          }
         } else {
           globalTarget.classList.remove('reveal-clip');
 
